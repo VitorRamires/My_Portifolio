@@ -9,8 +9,17 @@ img{
   height: 100%;
 }
 
+
+@font-face {
+  font-family: "inter-light";
+  src: url(/fonts/Inter-Light.ttf);
+}
 @font-face {
   font-family: "inter-regular";
+  src: url(/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: "inter-medium";
   src: url(/fonts/Inter-Regular.ttf);
 }
 @font-face {
@@ -18,12 +27,16 @@ img{
   src: url(/fonts/Inter-Black.ttf);
 }
 @font-face {
+  font-family: "inter-bold";
+  src: url(/fonts/Inter-Bold.ttf);
+}
+@font-face {
   font-family: "inter-semibold";
   src: url(/fonts/Inter-SemiBold.ttf);
 }
 
 .center{
-  width: 1200px;
+  width: 1400px;
   max-width: 95%;
   margin:0 auto
 }
