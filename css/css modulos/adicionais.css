@@ -1,21 +1,38 @@
 .experiencias{
   background-color: #272727;
+  padding:100px 0 100px 0;
+  text-align: center;
 }
 
-.experiencias .center{
+.experiencias h2{
+  font-size:2.5rem;
+  color: #ffffff;
+  font-family: "inter-bold";
+}
+
+.experiencias-body{
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 150px;
+  margin-top:150px;
 }
 
 .experiencia-box{
   position: relative;
   width: 1000px;
+  max-width: 90%;
   text-align: start;
 }
 
+.experiencia-box h3{
+  margin-bottom:15px;
+  font-size:0.9rem;
+  color:#CBE0FF;
+  font-family: "inter-bold";
+}
 
 
 .experiencia-info{
@@ -28,11 +45,11 @@
 
 .experiencia-decoration{
   position: absolute;
-  bottom:-3%;
-  right:-3%;
-  width: 250px;
-  height: 250px;
-  background-color: red;
+  bottom:-10%;
+  right:-5%;
+  width: 270px;
+  height: 270px;
+  background-color: #0066FF;
   z-index: 7;
 }
 
@@ -44,6 +61,7 @@
 
 .experiencia-titulos h5{
   margin-top:10px;
+  font-size:1rem;
 }
 
 .experiencia-descricao{
@@ -55,6 +73,7 @@
 
 .experiencia-tags ul{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   color:#ffffff;
   font-family: "inter-light";
