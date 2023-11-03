@@ -1,0 +1,66 @@
+.experiencias{
+  background-color: #272727;
+}
+
+.experiencias .center{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.experiencia-box{
+  position: relative;
+  width: 1000px;
+  text-align: start;
+}
+
+
+
+.experiencia-info{
+  position: relative;
+  z-index: 8;
+  padding:35px;
+  background-color: #3D3C3C;
+}
+
+
+.experiencia-decoration{
+  position: absolute;
+  bottom:-3%;
+  right:-3%;
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  z-index: 7;
+}
+
+.experiencia-titulos{
+  font-family: "inter-medium";
+  color:#ffffff;
+  font-size:1.5rem;
+}
+
+.experiencia-titulos h5{
+  margin-top:10px;
+}
+
+.experiencia-descricao{
+  font-family: "inter-light";
+  color:#cfcfcf;
+  font-size: 1rem;
+  margin:25px 0 45px 0;
+}
+
+.experiencia-tags ul{
+  display: flex;
+  gap: 10px;
+  color:#ffffff;
+  font-family: "inter-light";
+}
+
+.experiencia-tags ul li{
+  padding:10px 20px 10px 20px;
+  background-color: #0064FB;
+}
