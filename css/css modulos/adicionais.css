@@ -1,7 +1,8 @@
 .experiencias{
   background-color: #272727;
-  padding:100px 0 100px 0;
+  padding:150px 0 250px 0;
   text-align: center;
+  box-shadow: 0 10px 0 0 rgb(214, 0, 0);
 }
 
 .experiencias h2{
@@ -40,6 +41,7 @@
   z-index: 8;
   padding:35px;
   background-color: #3D3C3C;
+  border-radius: 20px;
 }
 
 
@@ -51,6 +53,7 @@
   height: 270px;
   background-color: #0066FF;
   z-index: 7;
+  border-radius: 20px;
 }
 
 .experiencia-titulos{

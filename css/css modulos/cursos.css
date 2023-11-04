@@ -1,0 +1,74 @@
+.cursos{
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 100px;
+  box-shadow: inset 0 70px 0 0 #272727;
+}
+
+.cursos-box{
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 50px 70px 150px 70px;
+  box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.219);
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.cursos-box h3{
+  font-family: "inter-black";
+  color:#464646;
+  font-size: 2.5rem;
+}
+
+.curso-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top:70px;
+}
+
+.curso{
+  position:relative;
+  box-shadow: 5px 10px 15px 0 #afafaf;
+  text-align: start;
+}
+
+.curso-info{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding:70px 50px 70px 50px;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.curso-decoration{
+  position: absolute;
+  bottom:-10%;
+  right:-10%;
+  background-color: #0066FF;
+  width: 130px;
+  height: 130px;
+  z-index: 9;
+}
+
+
+
+.curso-info h4{
+  font-size:1.7rem;
+  color: #0066FF;
+  font-family: "inter-black";
+}
+
+.curso-info h5{
+  font-size:0.9rem;
+  margin:7px 0 22px 0;
+  color: #AAAAAA;
+  font-family: "inter-light";
+}
+.curso-info p{
+  font-size:1.2rem;
+  color: #53C057;
+  font-family: "inter-semibold";
+}
