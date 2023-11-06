@@ -1,13 +1,11 @@
 .apresentacao .center{
-  display: grid;
-  grid-template-columns: 0.4fr 1fr;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-family: "inter-black";
   padding-top:160px;
   letter-spacing: 0.1rem;
-  gap: 50px;
-  
+  gap: 200px; 
 }
 
 .foto img{
@@ -19,7 +17,8 @@
 
 .foto{
   position: relative;
-  
+  width: 400px;
+  max-width: 100%;
 }
 
 .foto::after{
@@ -83,39 +82,51 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1300px) {
   .apresentacao-infos h2{
-    font-size:2rem;
+    font-size:2.2rem;
   }
   
   .apresentacao-infos h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .apresentacao-infos p::after{
-    width: 400px;
-  }
-}
-
-@media screen and (max-width:850px) {
-  .apresentacao .center{
-    grid-template-columns:1fr;
-  }
-  
-  .foto{
     width: 450px;
-    max-width: 90%;
-    margin:0 auto;
+  }
+}
+
+@media screen and (max-width:1035px) {
+  .apresentacao .center{
+    gap: 130px;
+  }
+}
+
+@media screen and (max-width:940px) {
+  .apresentacao .center{
+    flex-direction: column;
+    gap: 70px;
   }
 
-  .foto::before {
-    transform: translate(-50%, -28%);
+  .apresentacao-infos{
+    width: 100%;
+  }
+
+  .foto::before{
     left: 50%;
+    transform: translate(-50%, -28%);
+  }
+  .foto::after{
+    left: 50%;
+    transform: translate(-50%, -14%);
+  }
+}
+@media screen and (max-width:320px) {
+  .apresentacao-infos h2 {
+    font-size: 1.9rem;
 }
 
-.foto::after {
-  transform: translate(-50%, -14%);
-  left: 50%;
+.apresentacao-infos h3 {
+  font-size: 1.4rem;
 }
-
 }

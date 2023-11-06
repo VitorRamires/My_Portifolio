@@ -86,3 +86,27 @@
   padding:10px 20px 10px 20px;
   background-color: #0064FB;
 }
+
+@media screen and (max-width:480px) {
+  .experiencia-decoration{
+    right: unset;
+    left:50%;
+    bottom: -5%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
+@media screen and (max-width:330px) {
+  .experiencia-descricao{
+    font-size: 0.8rem;
+  }
+
+  .experiencia-titulos{
+    font-size: 1.2rem;
+  }
+
+  .experiencias h2{
+    font-size: 2.3rem;
+  }
+}
+
