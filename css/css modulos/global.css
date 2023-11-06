@@ -45,3 +45,14 @@ ul{
   list-style-type: none;
 }
 
+.concluido{
+color: #53C057;
+}
+
+.andamento{
+color: #32C08D;
+}
+
+.nao-iniciado{
+  color: #CD9159;
+}

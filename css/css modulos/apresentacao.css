@@ -83,3 +83,39 @@
   border-radius: 15px;
 }
 
+@media screen and (max-width:1200px) {
+  .apresentacao-infos h2{
+    font-size:2rem;
+  }
+  
+  .apresentacao-infos h3{
+    font-size: 1.5rem;
+  }
+
+  .apresentacao-infos p::after{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .apresentacao .center{
+    grid-template-columns:1fr;
+  }
+  
+  .foto{
+    width: 450px;
+    max-width: 90%;
+    margin:0 auto;
+  }
+
+  .foto::before {
+    transform: translate(-50%, -28%);
+    left: 50%;
+}
+
+.foto::after {
+  transform: translate(-50%, -14%);
+  left: 50%;
+}
+
+}

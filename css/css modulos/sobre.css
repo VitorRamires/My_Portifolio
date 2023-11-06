@@ -120,3 +120,43 @@
   text-align: center;
 }
 
+@media screen and (max-width:850px) {
+  .tecnologias{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width:510px) {
+  .historia p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .habilidades .center{
+    flex-direction: column;
+  }
+
+  .tags-box {
+    width: 450px;
+    max-width: 95%;
+  }
+
+  .tags-box:nth-child(1){
+    border-radius: 10px 10px 0 0;
+  }
+  .tags-box:nth-child(2){
+    border-radius: 0 0 10px 10px;
+  }
+
+}
+
+@media screen and (max-width:410px) {
+  .tecnologias{
+    grid-template-columns:1fr;
+  }
+
+  .historia p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}

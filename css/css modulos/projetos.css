@@ -53,74 +53,32 @@
 }
 
 .projeto-decoração{
-  position: relative;
-  width:200px;
-  height: 200px;
-}
-
-.projeto-decoração:nth-child(1)::after{
-  content: "";
   position: absolute;
   bottom:0;
-  left:0;
-  width: 90%;
-  height: 20px;
+  left:50%;
+  transform: translate(-50%, 40%);
+  width:80%;
+  height: 30px;
   background-color: #0066FF;
+  border-radius: 10px;
 }
 
-.projeto-decoração:nth-child(1)::before{
-  content: "";
-  position: absolute;
-  bottom:0;
-  left:0;
-  width: 20px;
-  height: 90%;
-  background-color: #0066FF;
+
+
+
+
+@media screen and (max-width: 890px) {
+  .projetos .center{
+    grid-template-columns: 1fr;
+  }
 }
 
-.projeto-decoração:nth-child(2)::after{
-  content: "";
-  position: absolute;
-  bottom:0;
-  right:0;
-  width: 90%;
-  height: 20px;
-  background-color: #0066FF;
-}
+@media screen and (max-width:450px) {
+  .projetos h2{
+    font-size: 1.7rem;
+  }
 
-.projeto-decoração:nth-child(2)::before{
-  content: "";
-  position: absolute;
-  bottom:0;
-  right:0;
-  width: 20px;
-  height: 90%;
-  background-color: #0066FF;
-}
-
-.cursos{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 30px;
-}
-
-.curso-box .titulo-cursos, .instituição, .status{
-  color:#ffffff;
-  font-family: "inter-black";
-}
-
-.titulo-cursos{
-  font-size: 1.5rem;
-}
-
-.instituição{
-  font-size: 0.8rem;
-  margin:5px 0 15px 0;
-}
-
-.status{
-  font-size: 0.7rem;
-  color:#00FF0A;
+  .projetos h2::before, .projetos h2::after{
+    display: none;
+  }
 }

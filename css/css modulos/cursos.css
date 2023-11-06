@@ -5,11 +5,21 @@
   box-shadow: inset 0 70px 0 0 #272727;
 }
 
+
+.titulo-cursos{
+  font-size: 1.5rem;
+}
+
+.instituição{
+  font-size: 0.8rem;
+  margin:5px 0 15px 0;
+}
+
 .cursos-box{
   margin:0 auto;
   width: 100%;
   text-align: center;
-  padding: 50px 70px 150px 70px;
+  padding: 50px 0 150px 0;
   box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.219);
   background-color: #ffffff;
   border-radius: 20px;
@@ -22,8 +32,9 @@
 }
 
 .curso-body{
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 70px;
   margin-top:70px;
 }
@@ -46,7 +57,7 @@
 .curso-decoration{
   position: absolute;
   bottom:-10%;
-  right:-10%;
+  right:10%;
   background-color: #0066FF;
   width: 130px;
   height: 130px;
@@ -69,6 +80,11 @@
 }
 .curso-info p{
   font-size:1.2rem;
-  color: #53C057;
   font-family: "inter-semibold";
+}
+
+@media screen and (max-width:840px) {
+  .curso-body{
+    grid-template-columns: 1fr;
+  }
 }
