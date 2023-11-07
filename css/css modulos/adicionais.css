@@ -1,8 +1,10 @@
 .experiencias{
+  position: relative;
   background-color: #272727;
-  padding:150px 0 250px 0;
+  padding:150px 0 320px 0;
   text-align: center;
-  box-shadow: 0 10px 0 0 rgb(214, 0, 0);
+  z-index: 15;
+  margin-top:50px;
 }
 
 .experiencias h2{
@@ -41,7 +43,7 @@
   z-index: 8;
   padding:35px;
   background-color: #3D3C3C;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 
@@ -53,7 +55,7 @@
   height: 270px;
   background-color: #0066FF;
   z-index: 7;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .experiencia-titulos{
@@ -85,6 +87,18 @@
 .experiencia-tags ul li{
   padding:10px 20px 10px 20px;
   background-color: #0064FB;
+}
+
+
+.decoração{
+  position: absolute;
+  top:0;
+  left:50%;
+  transform: translate(-50%, -40%);
+  width:80%;
+  height: 30px;
+  background-color: #0066FF;
+  border-radius: 10px;
 }
 
 @media screen and (max-width:480px) {

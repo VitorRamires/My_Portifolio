@@ -9,7 +9,10 @@ img{
   height: 100%;
 }
 
-
+@font-face {
+  font-family: "inter-Extralight";
+  src: url(/fonts/Inter-ExtraLight.ttf);
+}
 @font-face {
   font-family: "inter-light";
   src: url(/fonts/Inter-Light.ttf);
