@@ -1,22 +1,45 @@
 
 .cursos{
   position: relative;
-  background-color: #ffffff;
+  background-color: #054CB6;
   z-index: 16;
   padding-bottom:70px;
 }
 
 .cursos .center{
-  background-color: #ffffff;
+  background-color: #054CB6;
   text-align: center;
-  box-shadow: 0 -50px 0 0 rgb(255, 255, 255);
+  box-shadow: 0 -50px 0 0 #054CB6;
   border-radius: 10px;
 }
 
 .title-cursos{
-  font-size: 2.5rem;
-  font-family: "inter-light";
-  color:#696969;
+  position: relative;
+  font-size: 2.2rem;
+  font-family: "inter-Extralight";
+  color:#ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title-cursos::before{
+  content: "";
+  position: relative;
+  width: 3%;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.title-cursos::after{
+  content: "";
+  position: relative;
+  width: 3%;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
 }
 
 .curso-body{
@@ -28,7 +51,6 @@
   margin-top:40px;
 }
 
-
 .curso-box{
   width: 330px;
   max-width: 100%;
@@ -37,7 +59,7 @@
 
 .info-curso{
   background-color: #02255B;
-  padding:50px 10px 50px 10px;
+  padding:40px 10px 40px 10px;
   border-radius: 7px 7px 0 0;
 }
 
@@ -57,8 +79,10 @@
 }
 
 .certificado{
-  background-color:#0066FF;
+  color:#0066FF;
+  background-color:#ffffff;
   padding:10px 0 10px 0;
   font-family: "inter-light";
   border-radius: 0 0 7px 7px;
+  cursor: pointer;
 }
