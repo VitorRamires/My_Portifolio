@@ -9,8 +9,8 @@
 
 .experiencias h2{
   font-size:2.5rem;
-  color: #ffffff;
-  font-family: "inter-bold";
+  color: #f3f3f3;
+  font-family: "urbanist-bold";
 }
 
 .experiencias-body{
@@ -33,8 +33,8 @@
 .experiencia-box h3{
   margin-bottom:15px;
   font-size:0.9rem;
-  color:#CBE0FF;
-  font-family: "inter-bold";
+  color:#85B6FF;
+  font-family: "urbanist-bold";
 }
 
 
@@ -49,19 +49,21 @@
 
 .experiencia-decoration{
   position: absolute;
-  bottom:-10%;
-  right:-5%;
-  width: 270px;
-  height: 270px;
-  background-color: #0066FF;
+  bottom:0%;
+  right: 0;
+  transform: translate(-15%, 15%);
+  width: 40%;
+  height: 150px;
+  background-color: #3181f8;
   z-index: 7;
   border-radius: 10px;
 }
 
 .experiencia-titulos{
-  font-family: "inter-medium";
+  font-family: "urbanist-semibold";
   color:#ffffff;
   font-size:1.5rem;
+  
 }
 
 .experiencia-titulos h5{
@@ -70,7 +72,7 @@
 }
 
 .experiencia-descricao{
-  font-family: "inter-light";
+  font-family: "urbanist-light";
   color:#cfcfcf;
   font-size: 1rem;
   margin:25px 0 45px 0;
@@ -81,7 +83,7 @@
   flex-wrap: wrap;
   gap: 10px;
   color:#ffffff;
-  font-family: "inter-light";
+  font-family: "urbanist-semibold";
 }
 
 .experiencia-tags ul li{
@@ -89,16 +91,22 @@
   background-color: #0064FB;
 }
 
-
 .decoração{
   position: absolute;
   top:0;
   left:50%;
   transform: translate(-50%, -40%);
   width:80%;
-  height: 30px;
-  background-color: #0066FF;
+  height: 20px;
+  background-color: #0064F9;
   border-radius: 10px;
+}
+
+@media screen and (max-width:580px){
+  .experiencia-tags ul{
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width:480px) {

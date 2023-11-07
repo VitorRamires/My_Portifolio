@@ -1,8 +1,3 @@
-
-.sobre{
-  box-shadow: 0 100px 0 0 #ffffff;
-}
-
 .tecnologias{
   width: 1200px;
   max-width: 95%;
@@ -10,7 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  margin: 250px auto 0 auto;
+  margin: 0 auto;;
   z-index: 4;
 }
 
@@ -20,10 +15,11 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  background-color: #02255B;
+  background-color: #1f1e1e;
   box-shadow: inset 0 70px 0 0 #ffffff;
   border-radius: 8px;
   padding:0 30px 15px 30px;
+  border-bottom: 5px solid #0064F9;
 }
 
 .tecnologia-imagem{
@@ -35,13 +31,13 @@
   width: 100%;
   top:0;
   left:50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -45%);
   text-align: center;
   color:#ffffff;
-  background-color: #02255B;
+  background-color: #2D2C2C;
   padding:5px 20px 5px 20px;
   border-radius: 5px;
-  font-family: "inter-black";
+  font-family: "urbanist-medium";
   font-size:0.8rem;
 }
 
@@ -49,15 +45,15 @@
   position: relative;
   width: 100%;
   padding:170px 0 0 0;
-  background: linear-gradient(180deg, #054CB6, #02255B);
-  box-shadow: 0 -50px 0 0 #054CB6;
+  background: #2D2C2C;
+  box-shadow: 0 -50px 0 0 #2D2C2C;
   z-index: 3;
 }
 
 
 .historia h2{
   color:#ffffff;
-  font-family: "inter-black";
+  font-family: "urbanist-medium";
   font-size:2rem;
   margin-bottom:40px;
   text-align: center;
@@ -65,14 +61,14 @@
 
 .historia p{
   color:#ffffff;
-  font-family: "inter-light";
+  font-family: "urbanist-light";
   font-size:1rem;
   line-height: 1.6rem;
   text-align: center;
 }
 
 .habilidades h2{
-  font-family: "inter-bold";
+  font-family: "urbanist-medium";
   font-size: 1.4rem;
   max-width: 15ch;
   color:#ffffff;
@@ -88,6 +84,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .tags-box{
@@ -97,33 +94,27 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 5px 10px 0 #0000001f;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   padding-bottom:20px;
+  border-bottom: 10px solid #0064F9;
+  border-radius: 10px 10px 0 0;
 }
 
-.tags-box:nth-child(1){
-  border-radius: 10px 0 0 10px;
-  border:1px solid #eeeeee;
-}
-.tags-box:nth-child(2){
-  border-radius: 0 10px 10px 0;
-  border:1px solid #eeeeee;
-}
 
 .tags-box h2{
-  color:#252525;
+  color:#054CB6;
   padding-top:20px;
 }
 
 .tag{
-  font-family: "inter-medium";
-  color:#00398E;
+  font-family: "urbanist-medium";
+  color:#1f1f1f;
   padding:15px;
   border-radius: 10px;
   text-align: center;
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:940px) {
   .tecnologias{
     grid-template-columns: 1fr 1fr;
   }

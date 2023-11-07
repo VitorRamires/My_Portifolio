@@ -10,36 +10,36 @@ img{
 }
 
 @font-face {
-  font-family: "inter-Extralight";
-  src: url(/fonts/Inter-ExtraLight.ttf);
+  font-family: "urbanist-Extralight";
+  src: url(/fonts/Urbanist-ExtraLight.ttf);
 }
 @font-face {
-  font-family: "inter-light";
-  src: url(/fonts/Inter-Light.ttf);
+  font-family: "urbanist-light";
+  src: url(/fonts/Urbanist-Light.ttf);
 }
 @font-face {
-  font-family: "inter-regular";
-  src: url(/fonts/Inter-Regular.ttf);
+  font-family: "urbanist-regular";
+  src: url(/fonts/Urbanist-Regular.ttf);
 }
 @font-face {
-  font-family: "inter-medium";
-  src: url(/fonts/Inter-Regular.ttf);
+  font-family: "urbanist-medium";
+  src: url(/fonts/Urbanist-Medium.ttf);
 }
 @font-face {
-  font-family: "inter-black";
-  src: url(/fonts/Inter-Black.ttf);
+  font-family: "urbanist-black";
+  src: url(/fonts/Urbanist-Black.ttf);
 }
 @font-face {
-  font-family: "inter-bold";
-  src: url(/fonts/Inter-Bold.ttf);
+  font-family: "urbanist-bold";
+  src: url(/fonts/Urbanist-Bold.ttf);
 }
 @font-face {
-  font-family: "inter-semibold";
-  src: url(/fonts/Inter-SemiBold.ttf);
+  font-family: "urbanist-semibold";
+  src: url(/fonts/Urbanist-SemiBold.ttf);
 }
 
 .center{
-  width: 1400px;
+  width: 1600px;
   max-width: 90%;
   margin:0 auto
 }
