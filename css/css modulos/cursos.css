@@ -58,7 +58,7 @@
 }
 
 .info-curso{
-  background-color: #02255B;
+  background-color:#2c2c2c;
   padding:40px 10px 40px 10px;
   border-radius: 7px 7px 0 0;
 }
@@ -80,7 +80,7 @@
 
 .certificado{
   color:#ffffff;
-  background-color:#0066FF;
+  background-color:#004dc0;
   padding:10px 0 10px 0;
   font-family: "urbanist-light";
   border-radius: 0 0 7px 7px;
