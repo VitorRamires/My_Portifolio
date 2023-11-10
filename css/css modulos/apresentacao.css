@@ -143,9 +143,9 @@
 @media screen and (max-width:320px) {
   .apresentacao-infos h2 {
     font-size: 1.9rem;
-}
+  }
 
-.apresentacao-infos h3 {
-  font-size: 1.4rem;
-}
+  .apresentacao-infos h3 {
+    font-size: 1.4rem;
+  }
 }

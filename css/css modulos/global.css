@@ -94,6 +94,9 @@ color: #FFF177;
 
 .contato{
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -101,5 +104,95 @@ color: #FFF177;
   width: 50px;
   height: 50px;
 }
+
+.hamburguer{
+  position: relative;
+  width: 30px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hamburguer span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.hamburguer span:nth-child(2){
+  margin:7px 0 7px 0;
+  opacity: 1;
+}
+
+.hamburguer span{
+  transition: 0.3s;
+}
+
+
+span:nth-child(2).activeMenu{
+  opacity: 0;
+  transition: 0.3s;
+}
+span:nth-child(1).activeMenu{
+  transform: rotate(45deg) !important;
+  transform-origin: 3px 2px;
+  transition: 0.3s;
+}
+span:nth-child(3).activeMenu{
+  transform: rotate(-45deg) !important;
+  transform-origin: 0px 0;
+  transition: 0.3s;
+}
+
+.menu-mob-body{
+  position: sticky;
+  top:0;
+  left:0;
+  width: 100%;
+  background: linear-gradient(180deg, #000000, #303030);
+  padding:20px;
+  z-index: 1000;
+  border-bottom:2px solid #0064F9;
+  height: 65px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.menu-mob, .menu-mob-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-mob{
+  margin-top: 50px;
+}
+
+
+.menu-mob-links a{
+  color:#ffffff;
+  font-family: "urbanist-medium";
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+  .menu-body{
+    display: none;
+  }
+}
+
+
+.showMenu{
+  height: 370px;
+  transition: 0.5s;
+}
+
+
+
+
 
 
