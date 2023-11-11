@@ -38,6 +38,10 @@ img{
   src: url(/fonts/Urbanist-SemiBold.ttf);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .center{
   width: 1600px;
   max-width: 90%;
@@ -70,6 +74,7 @@ color: #FFF177;
   padding:20px 0 20px 0;
   z-index: 99999;
   border-bottom:2px solid #0064F9;
+  box-shadow: 0 5px 10px 0 #00000036;
 }
 
 .menu{
@@ -110,6 +115,7 @@ color: #FFF177;
   width: 30px;
   max-width: 100%;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .hamburguer span{
@@ -127,7 +133,6 @@ color: #FFF177;
 .hamburguer span{
   transition: 0.3s;
 }
-
 
 span:nth-child(2).activeMenu{
   opacity: 0;
@@ -150,12 +155,18 @@ span:nth-child(3).activeMenu{
   left:0;
   width: 100%;
   background: linear-gradient(180deg, #000000, #303030);
+  box-shadow: 0 5px 10px 0 #00000036;
   padding:20px;
   z-index: 1000;
   border-bottom:2px solid #0064F9;
   height: 65px;
   transition: 0.5s;
   overflow: hidden;
+}
+
+.showMenu{
+  height: 370px;
+  transition: 0.5s;
 }
 
 .menu-mob, .menu-mob-links{
@@ -178,17 +189,10 @@ span:nth-child(3).activeMenu{
 }
 
 
-
 @media screen and (max-width:600px) {
   .menu-body{
     display: none;
   }
-}
-
-
-.showMenu{
-  height: 370px;
-  transition: 0.5s;
 }
 
 
