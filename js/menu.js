@@ -4,9 +4,6 @@ const menuMobile = document.querySelector(".menu-mob-body")
 const hamburguerLines = document.querySelectorAll(".hamburguer span")
 
 
-
-
-
 function handleShowMenu(){
   if(menuMobile.classList.contains('showMenu')){
     menuMobile.classList.remove('showMenu')
