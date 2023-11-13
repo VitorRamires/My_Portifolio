@@ -165,7 +165,7 @@ span:nth-child(3).activeMenu{
 }
 
 .showMenu{
-  height: 370px;
+  height: 450px;
   transition: 0.5s;
 }
 
@@ -174,13 +174,16 @@ span:nth-child(3).activeMenu{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .menu-mob{
   margin-top: 50px;
 }
 
+.menu-mob .contato{
+  margin-top:25px;
+}
 
 .menu-mob-links a{
   color:#ffffff;

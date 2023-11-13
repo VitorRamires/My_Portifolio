@@ -1,0 +1,99 @@
+.anime{
+  opacity: 0;
+}
+
+.tecnologia:nth-child(1).anime.animeAtivo{
+  opacity: 1;
+  animation: animeTec .3s ease-in-out;
+}
+.tecnologia:nth-child(2).anime.animeAtivo{
+  opacity: 1;
+  animation: animeTec .4s ease-in-out;
+}
+.tecnologia:nth-child(3).anime.animeAtivo{
+  opacity: 1;
+  animation: animeTec .5s ease-in-out;
+}
+.tecnologia:nth-child(4).anime.animeAtivo{
+  opacity: 1;
+  animation: animeTec .6s ease-in-out;
+}
+
+
+.apresentacao-infos.anime.animeAtivo{
+  opacity: 1;
+  animation: animeInfo .3s ease-in-out;
+}
+.apresentacao-infos.anime.animeAtivo{
+  opacity: 1;
+  animation: animeInfo .6s ease-in-out;
+}
+
+
+.projeto:nth-child(1).anime.animeAtivo{
+  opacity: 1;
+  animation: animeProjeto .3s ease-in-out;
+}
+.projeto:nth-child(2).anime.animeAtivo{
+  opacity: 1;
+  animation: animeProjeto .5s ease-in-out;
+}
+.projeto:nth-child(3).anime.animeAtivo{
+  opacity: 1;
+  animation: animeProjeto .3s ease-in-out;
+}
+.projeto:nth-child(4).anime.animeAtivo{
+  opacity: 1;
+  animation: animeProjeto .5s ease-in-out;
+}
+
+
+.experiencia-box.anime.animeAtivo{
+  opacity: 1;
+  animation: animeExperiencia .5s ease-in-out;
+}
+
+
+@keyframes animeInfo {
+  from{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animeTec {
+  from{
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animeProjeto {
+  from{
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes  animeExperiencia {
+  from{
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

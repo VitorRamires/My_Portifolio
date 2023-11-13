@@ -86,3 +86,7 @@
   border-radius: 0 0 7px 7px;
   cursor: pointer;
 }
+
+.certificado a{
+  color:#ffffff;
+}
