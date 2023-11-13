@@ -45,7 +45,7 @@
 .curso-body{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 20px;
   margin-top:40px;
@@ -80,12 +80,20 @@
 
 .certificado{
   color:#ffffff;
-  background-color:#004dc0;
+  background: linear-gradient(75deg, #0064FB, #0049b6 );
   padding:10px 0 10px 0;
   font-family: "urbanist-light";
   border-radius: 0 0 7px 7px;
   cursor: pointer;
+  transition: 0.3s;
 }
+
+
+.certificado:hover{
+  padding:20px 0 20px 0;
+  transition: 0.3s;
+}
+
 
 .certificado a{
   color:#ffffff;

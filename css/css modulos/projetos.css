@@ -42,8 +42,14 @@
 .projeto img{
   box-shadow: 15px 15px 15px 0 #979797;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
+.projeto img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  cursor: pointer;
+}
 
 .decoration-box{
   position: absolute;
@@ -62,6 +68,3 @@
   }
 }
 
-@media screen and (max-width:450px) {
-
-}

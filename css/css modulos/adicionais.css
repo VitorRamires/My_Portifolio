@@ -54,7 +54,7 @@
   transform: translate(-15%, 15%);
   width: 40%;
   height: 150px;
-  background-color: #3181f8;
+  background-color: rgb(216, 216, 216);
   z-index: 7;
   border-radius: 10px;
 }
@@ -89,6 +89,8 @@
 .experiencia-tags ul li{
   padding:10px 20px 10px 20px;
   background-color: #0064FB;
+  background: linear-gradient(75deg, #0064FB, #0049b6 );
+  
 }
 
 .decoração{
@@ -98,7 +100,7 @@
   transform: translate(-50%, -40%);
   width:80%;
   height: 20px;
-  background-color: #0064F9;
+  background: linear-gradient(90deg, #0064FB, #0049b6 );
   border-radius: 10px;
 }
 
