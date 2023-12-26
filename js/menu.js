@@ -10,8 +10,7 @@ function handleShowMenu(){
     hamburguerLines.forEach((line) =>{
       line.classList.remove('activeMenu')
     })
-
-  } else {
+  }else{
     menuMobile.classList.add('showMenu')
     hamburguerLines.forEach((line) =>{
       line.classList.add('activeMenu')
