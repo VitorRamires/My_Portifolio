@@ -39,6 +39,12 @@
   gap: 60px;
 }
 
+
+.projeto{
+  position: relative;
+  cursor: pointer;
+}
+
 .projeto img{
   box-shadow: 15px 15px 15px 0 #979797;
   border-radius: 10px;
@@ -57,9 +63,6 @@
   display: flex;
   justify-content: space-between;
 }
-
-
-
 
 
 @media screen and (max-width: 890px) {
