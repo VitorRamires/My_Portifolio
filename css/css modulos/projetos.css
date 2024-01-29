@@ -2,6 +2,8 @@
   position: relative;
   padding:150px 0 190px 0;
   box-shadow: 0 -1200px 0 0 #ffffff;
+  border:1px solid red;
+  border: hidden;
 }
 
 .projetos h2{
@@ -23,6 +25,8 @@
   height: 5px;
   background-color: #0064F9;
   border-radius: 2px;
+
+
 }
 .projetos h2::before{
   content: "";
