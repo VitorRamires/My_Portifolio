@@ -52,7 +52,24 @@ ul{
   list-style-type: none;
 }
 
+.decoration{
+  position: absolute;
+  bottom:0;
+  width: 35px;
+  height: 65px;
+  background-color: #F99417;
+  z-index: 333;
+  border-radius: 10px;
+  transform: translateY(50%);
+}
 
+.decoration-left{
+  left:0;
+}
+
+.decoration-right{
+  right: 0;
+}
 
 .menu-body{
   position:fixed;
@@ -104,7 +121,7 @@ ul{
 }
 
 .menu-links a:hover{
-  color: #5093f7;
+  color: #F99417;
   transition: 0.3s;
 }
 
@@ -124,7 +141,7 @@ ul{
 
 .github:hover, .linkedin:hover{
   padding:5px;
-  background-color: #0064F9;
+  background-color: #F99417;
   transition: 0.3s;
   border-radius: 50%;
 }

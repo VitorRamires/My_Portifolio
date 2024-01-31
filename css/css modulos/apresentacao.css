@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background-color: #363062;
-  padding-bottom: 400px;
+  padding-bottom: 250px;
 }
 
 .apresentacao .center{
@@ -40,7 +40,7 @@
   font-family: "urbanist-bold";
   border-radius: 5px;
   margin-top:60px;
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   cursor: pointer;
   transform: scale(1);
   transition: 0.2s;

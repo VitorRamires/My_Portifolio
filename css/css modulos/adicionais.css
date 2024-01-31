@@ -1,6 +1,5 @@
 .experiencias{
   position: relative;
-  background: linear-gradient(45deg,#ffffff, #F9F9F9, #e4e4e4);
   text-align: center;
   z-index: 15;
   display: grid;
@@ -16,14 +15,16 @@
 
 .experiencias-body{
   position: relative;
-  text-align: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 50px;
   background-color: #F9F9F9;
-  padding-bottom: 50px;
+  gap: 50px;
+  padding-bottom:50px;
+  margin:0 auto;
+  text-align: center;
 }
 
 .experiencia-box{
@@ -31,6 +32,7 @@
   max-width: 90%;
   width: 950px;
   text-align: start;
+  margin:0 auto;
 }
 
 .experiencia-box h3{

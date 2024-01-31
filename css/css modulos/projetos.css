@@ -14,7 +14,6 @@
   margin:0 auto 250px auto;
   background-color: #7F70F0;
   padding:40px 0 40px 0;
-  border-radius: 10px;
   box-shadow: 23px 23px 8px 0 rgba(0, 0, 0, 0.205);
 }
 
@@ -54,8 +53,9 @@
   color: #F5F5F5;
   font-family: "urbanist-Extralight";
   margin:20px 0 40px 0;
-  font-size: 1.2rem;
-  max-width: 40ch;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  max-width: 50ch;
 }
 
 .botoes-projeto{
@@ -64,12 +64,13 @@
 }
 
 .botoes-projeto a{
-  width: 80px;
+  width: 100px;
   max-width: 100%;
   display: inline-block;
   color: #F9F9F9;
   background-color:#F99417;
   padding:10px;
+  font-size: 1.15rem;
   font-family: "urbanist-semibold";
   border-radius: 5px;
   text-decoration: none;
