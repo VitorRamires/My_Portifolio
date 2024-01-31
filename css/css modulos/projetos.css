@@ -88,5 +88,14 @@
   .projetos .center{
     grid-template-columns: 1fr;
   }
+
+  .projetos h2{
+    font-size: 2.7rem;
+  }
 }
 
+@media screen and (max-width: 620px){
+  .projetos h2{
+    width: 95%;
+  }
+}
