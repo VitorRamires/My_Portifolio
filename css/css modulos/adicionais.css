@@ -1,39 +1,42 @@
 .experiencias{
   position: relative;
-  background: linear-gradient(90deg,#272727, #141414);
-  padding:150px 0 320px 0;
+  background: linear-gradient(45deg,#ffffff, #F9F9F9, #e4e4e4);
   text-align: center;
   z-index: 15;
-  margin-top:50px;
+  display: grid;
+  grid-template-columns: 1fr 0.6fr;
 }
 
 .experiencias h2{
-  font-size:2.5rem;
-  color: #f3f3f3;
+  font-size:3.5rem;
+  color: #695ACF;
   font-family: "urbanist-bold";
+  margin-top:90px;
 }
 
 .experiencias-body{
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 150px;
-  margin-top:150px;
+  gap: 50px;
+  background-color: #F9F9F9;
+  padding-bottom: 50px;
 }
 
 .experiencia-box{
   position: relative;
-  width: 1000px;
   max-width: 90%;
+  width: 950px;
   text-align: start;
 }
 
 .experiencia-box h3{
   margin-bottom:15px;
   font-size:0.9rem;
-  color:#85B6FF;
+  color:#F5F5F5;
   font-family: "urbanist-bold";
 }
 
@@ -41,27 +44,16 @@
 .experiencia-info{
   position: relative;
   z-index: 8;
-  padding:35px;
-  background-color: #3D3C3C;
+  padding:40px;
+  background-color:#F4F4F4;
   border-radius: 10px;
+  box-shadow: 15px 15px 8px 0 rgba(0, 0, 0, 0.205);
 }
 
-
-.experiencia-decoration{
-  position: absolute;
-  bottom:0%;
-  right: 0;
-  transform: translate(-15%, 15%);
-  width: 40%;
-  height: 150px;
-  background-color: rgb(216, 216, 216);
-  z-index: 7;
-  border-radius: 10px;
-}
 
 .experiencia-titulos{
   font-family: "urbanist-semibold";
-  color:#ffffff;
+  color:#403686;
   font-size:1.5rem;
   
 }
@@ -72,9 +64,11 @@
 }
 
 .experiencia-descricao{
+  width: 80ch;
   font-family: "urbanist-light";
-  color:#cfcfcf;
+  color:#292929;
   font-size: 1rem;
+  line-height: 1.5rem;
   margin:25px 0 45px 0;
 }
 
@@ -83,59 +77,35 @@
   flex-wrap: wrap;
   gap: 10px;
   color:#ffffff;
-  font-family: "urbanist-semibold";
+  font-family: "urbanist-light";
 }
 
 .experiencia-tags ul li{
   padding:10px 20px 10px 20px;
-  background-color: #0064FB;
-  background: linear-gradient(75deg, #0064FB, #0049b6 );
+  background: linear-gradient(75deg, #F99417, #dd7a00 );
   
 }
 
-.decoração{
-  position: absolute;
-  top:0;
-  left:50%;
-  transform: translate(-50%, -40%);
-  width:80%;
-  height: 20px;
-  background: linear-gradient(90deg, #0064FB, #0049b6 );
-  border-radius: 10px;
+
+.planes{
+  background-color: #363062;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width:580px){
-  .experiencia-tags ul{
-    flex-direction: column;
-    text-align: center;
-  }
-  .experiencia-decoration{
-    right: unset;
-    left:50%;
-    transform: translate(-50%, 15%);
-  }
+.plane1{
+  width: 50%;
+  height: 50%;
 }
 
-@media screen and (max-width:480px) {
-  .experiencia-decoration{
-    right: unset;
-    left:50%;
-    bottom: -5%;
-    transform: translateX(-50%);
-    width: 90%;
-  }
-}
-@media screen and (max-width:330px) {
-  .experiencia-descricao{
-    font-size: 0.8rem;
-  }
-
-  .experiencia-titulos{
-    font-size: 1.2rem;
-  }
-
-  .experiencias h2{
-    font-size: 2.3rem;
-  }
+.plane2{
+  width: 35%;
+  height: 35%;
 }
 
+.plane3{
+  width: 20%;
+  height: 20%;
+}

@@ -1,73 +1,87 @@
 .projetos{
   position: relative;
   padding:150px 0 190px 0;
-  box-shadow: 0 -1200px 0 0 #ffffff;
-  border:1px solid red;
+  background-color: #4E458F;
   border: hidden;
 }
 
 .projetos h2{
+  width: 70%;
   text-align: center;
   font-family: "urbanist-bold";
-  color:#444444;
-  font-size: 2.5rem;
-  margin:70px 0 100px 0;
+  color:#ffffff;
+  font-size: 4rem;
+  margin:0 auto 250px auto;
+  background-color: #7F70F0;
+  padding:40px 0 40px 0;
+  border-radius: 10px;
+  box-shadow: 23px 23px 8px 0 rgba(0, 0, 0, 0.205);
+}
+
+.projeto-box{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-}
-
-.projetos h2::after{
-  content: "";
-  position: relative;
-  width: 3%;
-  height: 5px;
-  background-color: #0064F9;
-  border-radius: 2px;
-
-
-}
-.projetos h2::before{
-  content: "";
-  position: relative;
-  width: 3%;
-  height: 5px;
-  background-color: #0064F9;
-  border-radius: 2px;
-}
-
-.projetos .center{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 60px;
 }
 
-
 .projeto{
-  position: relative;
-  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .projeto img{
-  box-shadow: 15px 15px 15px 0 #979797;
-  border-radius: 10px;
-  transition: 0.3s;
+  position: relative;
+  border-radius: 5px 0 0 5px;
+  box-shadow: -10px 12px 6px 0 rgba(0, 0, 0, 0.315);
 }
 
-.projeto img:hover{
-  transform: scale(1.05);
-  transition: 0.3s;
-  cursor: pointer;
+.informacao-projeto{
+  position: relative;
+  background-color: #403686;
+  padding: 70px 40px 40px 70px;
+  border-radius: 0 5px 5px 0;
 }
 
-.decoration-box{
-  position: absolute;
-  width:100%;
+.texto-projeto h3{
+  font-family: "urbanist-black";
+  color: #F5F5F5;
+  font-size: 1.6rem;
+}
+
+.texto-projeto p{
+  color: #F5F5F5;
+  font-family: "urbanist-Extralight";
+  margin:20px 0 40px 0;
+  font-size: 1.2rem;
+  max-width: 40ch;
+}
+
+.botoes-projeto{
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
 }
 
+.botoes-projeto a{
+  width: 80px;
+  max-width: 100%;
+  display: inline-block;
+  color: #F9F9F9;
+  background-color:#F99417;
+  padding:10px;
+  font-family: "urbanist-semibold";
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.botoes-projeto a:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
 
 @media screen and (max-width: 890px) {
   .projetos .center{

@@ -43,26 +43,15 @@ html{
 }
 
 .center{
-  width: 1600px;
+  width: 1300px;
   max-width: 90%;
-  margin:0 auto
+  margin:0 auto;
 }
 
 ul{
   list-style-type: none;
 }
 
-.concluido{
-color: #77FF95;
-}
-
-.andamento{
-color: #FFF177;
-}
-
-.nao-iniciado{
-  color: #FFC977;
-}
 
 
 .menu-body{
@@ -70,11 +59,10 @@ color: #FFF177;
   top:0;
   left:0;
   width: 100%;
-  background: linear-gradient(180deg, #000000, #303030);
+  background-color: #363062;
   padding:20px 0 20px 0;
   z-index: 99999;
-  border-bottom:2px solid #0064F9;
-  box-shadow: 0 5px 10px 0 #00000036;
+  color:#F5F5F5;
 }
 
 .menu{
@@ -198,18 +186,18 @@ color: #FFF177;
     top:0;
     left:0;
     width: 100%;
-    background: linear-gradient(180deg, #000000, #303030);
+    background: linear-gradient(180deg, #695ACF, #363062);
     box-shadow: 0 5px 10px 0 #00000036;
     padding:20px;
     z-index: 1000;
-    border-bottom:2px solid #0064F9;
+    border-bottom:2px solid #F99417;
     height: 65px;
     transition: 0.5s;
     overflow: hidden;
   }
   
   .showMenu{
-    height: 450px;
+    height: 470px;
     transition: 0.5s;
   }
   

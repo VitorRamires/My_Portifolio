@@ -1,56 +1,14 @@
 .apresentacao{
-  margin-bottom:200px;
+  position: relative;
+  width: 100%;
+  background-color: #363062;
+  padding-bottom: 400px;
 }
 
 .apresentacao .center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top:230px;
+  padding-top:250px;
   letter-spacing: 0.1rem;
-  gap: 200px; 
-}
-
-.foto img{
-  position: relative;
-  border-radius: 30px;
-  z-index: 2;
-  box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.363);
-}
-
-.foto{
-  position: relative;
-  width: 400px;
-  max-width: 100%;
-}
-
-.foto::after{
-  content:"";
-  position: absolute;
-  width: 95%;
-  height: 95%;
-  transform: translate(20%, -14%);
-  background-color: #303030;
-  top:0;
-  left:0;
-  z-index: 1;
-  border-radius: 30px;
-  box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.363);
-  opacity: 1;
-}
-
-.foto::before{
-  content:"";
-  position: absolute;
-  width: 85%;
-  height: 85%;
-  transform: translate(50%, -28%);
-  background-color: #003f9c;
-  top:0;
-  left:0;
-  border-radius: 30px;
-  box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.363);
-  opacity: 1;
+  color:#F5F5F5;
 }
 
 .apresentacao-infos{
@@ -58,32 +16,44 @@
 }
 
 .apresentacao-infos h2{
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   margin:15px 0 35px 0;
-  color:#0050c7;
-  max-width: 10ch;
-  text-align: start;
   font-family: "urbanist-regular";
 }
 
 .apresentacao-infos p{
   position: relative;
-  font-size:0.9rem;
-  color:#303030;
-  text-align: start;
+  font-size:1.4rem;
+  max-width: 40ch;
+  text-align: center;
+  margin:0 auto;
   font-family: "urbanist-regular";
 }
 
-.apresentacao-infos h2::after{
-  content: "";
-  position: relative;
-  display: block;
-  width: 100px;
-  max-width: 100%;
-  height: 5px;
-  background-color: #0000008e;
-  margin-top:10px;
+
+.button-projetos{
+  margin:0 auto;
+  text-align: center;
+  padding:20px;
+  width: 200px;
+  background-color: #F99417;
+  font-family: "urbanist-bold";
   border-radius: 5px;
+  margin-top:60px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.button-projetos:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.button-projetos a{
+  text-decoration: none;
+  color:#F5F5F5;
 }
 
 @media screen and (max-width:1300px) {
@@ -127,20 +97,8 @@
   .apresentacao-infos{
     width: 100%;
   }
-
-  .foto::before{
-    left: 50%;
-    transform: translate(-50%, -28%);
-  }
-  .foto::after{
-    left: 50%;
-    transform: translate(-50%, -14%);
-  }
-  .apresentacao-infos h2::after{
-    margin:15px auto 0 auto;
-    text-align: center;
-  }
 }
+
 @media screen and (max-width:320px) {
   .apresentacao-infos h2 {
     font-size: 1.9rem;
