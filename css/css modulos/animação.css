@@ -38,14 +38,14 @@
   opacity: 1;
   animation: animeTec .6s ease-in-out;
 }
-    .tags:nth-child(8).anime.animeAtivo {
-      opacity: 1;
-      animation: animeTec .6s ease-in-out;
-    }
+.tags:nth-child(8).anime.animeAtivo {
+  opacity: 1;
+  animation: animeTec .6s ease-in-out;
+}
   
-    .tags:nth-child(9).anime.animeAtivo {
-      opacity: 1;
-    animation: animeTec .6s ease-in-out;
+.tags:nth-child(9).anime.animeAtivo {
+  opacity: 1;
+  animation: animeTec .6s ease-in-out;
 }
 .apresentacao-infos.anime.animeAtivo{
   opacity: 1;
@@ -56,7 +56,10 @@
   animation: animeInfo .3s ease-in-out;
 }
 
-
+.title-projetos.anime.animeAtivo{
+  opacity: 1;
+  animation: animeProjeto .3s ease-in-out;
+}
 .projeto:nth-child(1).anime.animeAtivo{
   opacity: 1;
   animation: animeProjeto .3s ease-in-out;
@@ -229,11 +232,11 @@
 @keyframes animeProjeto {
   from{
     opacity: 0;
-    transform: scale(0.9);
+    transform: translateX(-15px);
   }
   to{
     opacity: 1;
-    transform: scale(1);
+    transform: translateX(0);
   }
 }
 
