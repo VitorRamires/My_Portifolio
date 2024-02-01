@@ -100,4 +100,38 @@
   .skill-tags ul{
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
+  .historia p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:410px) {
+  .sobre .center {
+    grid-template-columns: 1fr;
+    gap: 150px;
+  }
+
+  .skill-tags ul{
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  .historia p{
+    width: 100%;
+    text-align: center;
+  }
+
+  .historia h2{
+    font-size:2.5rem;
+    text-align: center;
+  }
+
+  .sobre-informações{
+    padding-right:0;
+  }
+
+  .sobre-informações::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

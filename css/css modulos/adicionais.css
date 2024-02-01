@@ -2,8 +2,7 @@
   position: relative;
   text-align: center;
   z-index: 15;
-  display: grid;
-  grid-template-columns: 1fr 0.6fr;
+  overflow: hidden;
 }
 
 .experiencias h2{
@@ -11,6 +10,7 @@
   color: #695ACF;
   font-family: "urbanist-bold";
   margin-top:90px;
+  z-index: 55;
 }
 
 .experiencias-body{
@@ -44,6 +44,7 @@
 
 
 .experiencia-info{
+  width: 100%;
   position: relative;
   z-index: 8;
   padding:40px;
@@ -89,8 +90,12 @@
 }
 
 
-.planes{
-  background-color: #363062;
+.planes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,16 +103,82 @@
 }
 
 .plane1{
-  width: 50%;
-  height: 50%;
+  position: relative;
+    width: 350px;
+    height: 350px;
+    right: 15%;
+    transform: translateX(300%);
+    animation: plane1-anim 6s ease-in-out infinite forwards;
 }
 
 .plane2{
-  width: 35%;
-  height: 35%;
+  position: relative;
+    width: 350px;
+    height: 350px;
+    left: 10%;
+    transform: translateX(-300%);
+    animation: plane2-anim 6.5s 2s ease-in-out infinite forwards;
 }
 
 .plane3{
-  width: 20%;
-  height: 20%;
-}
+  position: relative;
+    width: 350px;
+    height: 350px;
+    right: 5%;
+    transform: translateX(300%);
+    animation: plane3-anim 7s ease-in-out infinite forwards;
+  }
+  
+  @keyframes plane1-anim {
+    0% {
+      transform: translateX(300%);
+    }
+  
+    50% {
+      transform: translateX(-200%);
+    }
+  
+    75% {
+      transform: translateX(-270%) rotate(-180deg);
+    }
+  
+    100% {
+      transform: translateX(300%) rotate(-180deg);
+    }
+  }
+  
+  @keyframes plane2-anim {
+    0% {
+      transform: translateX(-300%) rotate(-180deg);
+    }
+  
+    50% {
+      transform: translateX(200%) rotate(-180deg);
+    }
+  
+    75% {
+      transform: translateX(270%);
+    }
+  
+    100% {
+      transform: translateX(-300%);
+    }
+  }
+  
+  @keyframes plane3-anim {
+    0% {
+      transform: translateX(300%);
+    }
+  
+    50% {
+      transform: translateX(-200%);
+    }
+  
+    75% {
+      transform: translateX(-270%) rotate(-180deg);
+    }
+
+    100% {
+      transform: translateX(300%) rotate(-180deg);
+    }
+    }
