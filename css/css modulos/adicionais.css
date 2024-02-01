@@ -1,8 +1,7 @@
 .experiencias{
   position: relative;
   text-align: center;
-  z-index: 15;
-  overflow: hidden;
+  background: #ffffff;
 }
 
 .experiencias h2{
@@ -20,7 +19,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #F9F9F9;
   gap: 50px;
   padding-bottom:50px;
   margin:0 auto;
@@ -38,7 +36,7 @@
 .experiencia-box h3{
   margin-bottom:15px;
   font-size:0.9rem;
-  color:#F5F5F5;
+  color: #cccccc;
   font-family: "urbanist-bold";
 }
 
@@ -48,7 +46,7 @@
   position: relative;
   z-index: 8;
   padding:40px;
-  background-color:#F4F4F4;
+  background: linear-gradient(45deg, #ffffff, #F9F9F9);
   border-radius: 10px;
   box-shadow: 15px 15px 8px 0 rgba(0, 0, 0, 0.205);
 }
@@ -64,12 +62,13 @@
 .experiencia-titulos h5{
   margin-top:10px;
   font-size:1rem;
+  color: #968dcf;
 }
 
 .experiencia-descricao{
   width: 80ch;
   font-family: "urbanist-light";
-  color:#292929;
+  color: #363636;
   font-size: 1rem;
   line-height: 1.5rem;
   margin:25px 0 45px 0;
@@ -90,95 +89,15 @@
 }
 
 
-.planes {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.plane1{
-  position: relative;
-    width: 350px;
-    height: 350px;
-    right: 15%;
-    transform: translateX(300%);
-    animation: plane1-anim 6s ease-in-out infinite forwards;
-}
-
-.plane2{
-  position: relative;
-    width: 350px;
-    height: 350px;
-    left: 10%;
-    transform: translateX(-300%);
-    animation: plane2-anim 6.5s 2s ease-in-out infinite forwards;
-}
-
-.plane3{
-  position: relative;
-    width: 350px;
-    height: 350px;
-    right: 5%;
-    transform: translateX(300%);
-    animation: plane3-anim 7s ease-in-out infinite forwards;
+@media screen and (max-width:955px) {
+  .experiencia-descricao {
+    width: 95%;
   }
-  
-  @keyframes plane1-anim {
-    0% {
-      transform: translateX(300%);
-    }
-  
-    50% {
-      transform: translateX(-200%);
-    }
-  
-    75% {
-      transform: translateX(-270%) rotate(-180deg);
-    }
-  
-    100% {
-      transform: translateX(300%) rotate(-180deg);
-    }
+}
+@media screen and (max-width:470px) {
+  .experiencia-descricao {
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: center;
   }
-  
-  @keyframes plane2-anim {
-    0% {
-      transform: translateX(-300%) rotate(-180deg);
-    }
-  
-    50% {
-      transform: translateX(200%) rotate(-180deg);
-    }
-  
-    75% {
-      transform: translateX(270%);
-    }
-  
-    100% {
-      transform: translateX(-300%);
-    }
-  }
-  
-  @keyframes plane3-anim {
-    0% {
-      transform: translateX(300%);
-    }
-  
-    50% {
-      transform: translateX(-200%);
-    }
-  
-    75% {
-      transform: translateX(-270%) rotate(-180deg);
-    }
-
-    100% {
-      transform: translateX(300%) rotate(-180deg);
-    }
-    }
+}

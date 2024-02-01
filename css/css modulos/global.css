@@ -43,6 +43,7 @@ html{
 }
 
 .center{
+  position: relative;
   width: 1300px;
   max-width: 90%;
   margin:0 auto;
@@ -58,7 +59,7 @@ ul{
   width: 35px;
   height: 65px;
   background-color: #F99417;
-  z-index: 333;
+  z-index: 888;
   border-radius: 10px;
   transform: translateY(50%);
 }

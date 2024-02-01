@@ -2,13 +2,14 @@
   position: relative;
   width: 100%;
   background-color: #363062;
-  padding-bottom: 250px;
+  padding-bottom: 275px;
 }
 
 .apresentacao .center{
   padding-top:250px;
   letter-spacing: 0.1rem;
   color:#F5F5F5;
+  z-index: 777;
 }
 
 .apresentacao-infos{
@@ -92,3 +93,4 @@
   }
   
 }
+
