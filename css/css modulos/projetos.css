@@ -28,12 +28,12 @@
 .projeto{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.205);
 }
 
 .projeto img{
   position: relative;
   border-radius: 5px 0 0 5px;
-  box-shadow: -10px 12px 6px 0 rgba(0, 0, 0, 0.315);
   object-fit: cover;
 }
 
@@ -121,5 +121,15 @@
 @media screen and (max-width: 620px){
   .projetos h2{
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projetos {
+    padding: 50px 0 190px 0;
+  }
+
+  .projetos h2 {
+    margin: 0 auto 100px auto;
   }
 }
