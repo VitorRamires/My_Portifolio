@@ -31,11 +31,16 @@
   box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.205);
 }
 
+.img-projeto{
+  width: 100%;
+}
+
 .projeto img{
   position: relative;
   border-radius: 5px 0 0 5px;
   object-fit: cover;
 }
+
 
 .informacao-projeto{
   position: relative;
