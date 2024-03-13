@@ -1,86 +1,81 @@
-.anime{
+.anime {
   opacity: 0;
 }
 
 .skill-title:nth-child(1).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .1s ease-in-out;
+  animation: animeTec 0.1s ease-in-out;
 }
 
 .tags:nth-child(1).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .3s ease-in-out;
+  animation: animeTec 0.3s ease-in-out;
 }
 .tags:nth-child(2).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .4s ease-in-out;
+  animation: animeTec 0.4s ease-in-out;
 }
 .tags:nth-child(3).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .5s ease-in-out;
+  animation: animeTec 0.5s ease-in-out;
 }
 .tags:nth-child(4).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
 
 .tags:nth-child(5).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
 
 .tags:nth-child(6).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
 
 .tags:nth-child(7).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
 .tags:nth-child(8).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
-  
+
 .tags:nth-child(9).anime.animeAtivo {
   opacity: 1;
-  animation: animeTec .6s ease-in-out;
+  animation: animeTec 0.6s ease-in-out;
 }
-.apresentacao-infos.anime.animeAtivo{
+.apresentacao-infos.anime.animeAtivo {
   opacity: 1;
-  animation: animeInfo .6s ease-in-out;
+  animation: animeInfo 0.6s ease-in-out;
 }
 .historia.anime.animeAtivo {
   opacity: 1;
-  animation: animeInfo .3s ease-in-out;
+  animation: animeInfo 0.3s ease-in-out;
 }
 
-.title-projetos.anime.animeAtivo{
+.projeto:nth-child(1).anime.animeAtivo {
   opacity: 1;
-  animation: animeProjeto .3s ease-in-out;
+  animation: animeProjeto 0.3s ease-in-out;
 }
-.projeto:nth-child(1).anime.animeAtivo{
+.projeto:nth-child(2).anime.animeAtivo {
   opacity: 1;
-  animation: animeProjeto .3s ease-in-out;
+  animation: animeProjeto 0.5s ease-in-out;
 }
-.projeto:nth-child(2).anime.animeAtivo{
+.projeto:nth-child(3).anime.animeAtivo {
   opacity: 1;
-  animation: animeProjeto .5s ease-in-out;
+  animation: animeProjeto 0.3s ease-in-out;
 }
-.projeto:nth-child(3).anime.animeAtivo{
+.projeto:nth-child(4).anime.animeAtivo {
   opacity: 1;
-  animation: animeProjeto .3s ease-in-out;
-}
-.projeto:nth-child(4).anime.animeAtivo{
-  opacity: 1;
-  animation: animeProjeto .5s ease-in-out;
+  animation: animeProjeto 0.5s ease-in-out;
 }
 
-
-.experiencia-box.anime.animeAtivo{
+.experiencia-box.anime.animeAtivo {
   opacity: 1;
-  animation: animeExperiencia .5s ease-in-out;
+  animation: animeExperiencia 0.5s ease-in-out;
 }
 
 .area {
@@ -112,9 +107,7 @@
   background: #272247b2;
   animation: animate-apresentation 25s linear infinite;
   bottom: -150px;
-
 }
-
 
 .circles li:nth-child(1) {
   left: 25%;
@@ -122,7 +115,6 @@
   height: 80px;
   animation-delay: 0s;
 }
-
 
 .circles li:nth-child(2) {
   left: 10%;
@@ -204,59 +196,63 @@
     opacity: 0;
     border-radius: 50%;
   }
-
 }
 
 @keyframes animeInfo {
-  from{
+  from {
     opacity: 0;
     transform: translateX(-40px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
 @keyframes animeTec {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-20px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes animeProjeto {
-  from{
+  from {
     opacity: 0;
     transform: translateX(-15px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-@keyframes  animeExperiencia {
-  from{
+@keyframes animeExperiencia {
+  from {
     opacity: 0;
     transform: translateX(-120px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
 .experiencias {
-  background: repeating-linear-gradient(45deg, #ffffff, #ffffff 5%, #F9F9F9 5%, #F9F9F9 10%);
+  background: repeating-linear-gradient(
+    45deg,
+    #ffffff,
+    #ffffff 5%,
+    #fdfdfd 5%,
+    #fdfdfd 10%
+  );
   background-size: 100px 100px;
   animation: move-it 2s linear infinite;
 }
-
 
 @keyframes move-it {
   0% {
