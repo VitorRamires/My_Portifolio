@@ -104,10 +104,14 @@
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 420px) {
   .sobre .center {
     grid-template-columns: 1fr;
     gap: 150px;
+  }
+
+  .skill-title{
+    text-align: center;
   }
 
   .skill-tags ul {

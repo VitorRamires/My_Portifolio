@@ -118,3 +118,9 @@
     font-size: 2.7rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .experiencia-descricao,
+  .experiencia-titulos {
+    text-align: center;
+  }
+}
