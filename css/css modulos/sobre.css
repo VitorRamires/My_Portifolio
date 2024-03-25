@@ -1,0 +1,139 @@
+.sobre {
+  width: 100%;
+  padding: 170px 0 250px 0;
+  background-color: #ffffff;
+}
+
+.sobre .center {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  align-items: start;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.sobre-informações {
+  padding-right: 150px;
+  position: relative;
+  z-index: 3;
+}
+
+.sobre-informações::after {
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 200px;
+  height: 7px;
+  border-radius: 5px;
+  background-color: #f99417;
+}
+
+.historia h2 {
+  color: #646464;
+  font-family: "urbanist-regular";
+  font-size: 4rem;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.historia p {
+  width: 55ch;
+  color: #646464;
+  font-family: "urbanist-Extralight";
+  font-size: 1.15rem;
+  line-height: 2rem;
+  text-align: start;
+  margin-top: 35px;
+}
+
+.skills {
+  position: relative;
+}
+
+.skill-title {
+  color: #646464;
+  font-family: "urbanist-light";
+  font-size: 2.5rem;
+  text-align: start;
+}
+
+.skill-tags ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.tags {
+  background-color: #5f5799;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "urbanist-regular";
+}
+
+@media screen and (max-width: 1300px) {
+  .tags {
+    font-size: 1rem;
+  }
+  .sobre .center {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sobre-informações {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .sobre .center {
+    grid-template-columns: 1fr;
+    gap: 150px;
+  }
+
+  .skill-tags ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .historia p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sobre .center {
+    grid-template-columns: 1fr;
+    gap: 150px;
+  }
+
+  .skill-title{
+    text-align: center;
+  }
+
+  .skill-tags ul {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .historia p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .historia h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .sobre-informações {
+    padding-right: 0;
+  }
+
+  .sobre-informações::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
