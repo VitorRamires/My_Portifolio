@@ -96,6 +96,7 @@
 .experiencia-tags ul li {
   padding: 10px 20px 10px 20px;
   background: linear-gradient(75deg, #f99417, #dd7a00);
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 955px) {
