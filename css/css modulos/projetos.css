@@ -1,0 +1,274 @@
+.controle {
+  width: 100%;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 30px;
+  width: 120px;
+  background-color: rgba(70, 70, 70, 0.877);
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+
+.prev {
+  margin-left: 20px;
+}
+
+.after {
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #43379e;
+  transition: 0.2s;
+}
+
+.projetos {
+  position: relative;
+  padding: 0 0 190px 0;
+  background: linear-gradient(25deg, #4e458f, #4e458f, #1e1658);
+  overflow: hidden;
+}
+
+.after {
+  transform: rotate(-180deg);
+}
+
+.projetos .center{
+  overflow: hidden;
+}
+
+.projetos .carousel {
+  width: 300%;
+}
+
+.title-projetos {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 100px auto;
+  box-shadow: inset 0 100px 0 0 #ffffff;
+}
+
+.projetos h2 {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "urbanist-bold";
+  color: #ffffff;
+  font-size: 4rem;
+  background-color: #7f70f0;
+  padding: 40px 0 40px 0;
+  box-shadow: 23px 23px 8px 0 rgba(0, 0, 0, 0.308);
+  border-radius: 5px;
+}
+
+.projeto-box {
+  display: flex;
+  align-items: start;
+}
+
+.projeto {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.projeto:nth-child(1) .banner-projeto {
+  background-image: url("/images/P1.png");
+  background-size: cover;
+  background-position: center;
+}
+.projeto:nth-child(2) .banner-projeto {
+  background-image: url("/images/P2.png");
+  background-size: cover;
+  background-position: center;
+}
+.projeto:nth-child(3) .banner-projeto {
+  background-image: url("/images/P3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.tecnologias {
+  position: relative;
+  color: #ffffff;
+}
+
+.tecnologias ul {
+  display: flex;
+  gap: 15px;
+}
+
+.tecnologias ul li {
+  background-color: #2f2485;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.banner-projeto {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+
+.informacao-projeto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  background-color: #403686;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+}
+
+.botoes-projeto a {
+  width: 100px;
+  max-width: 100%;
+  display: inline-block;
+  color: #f9f9f9;
+  background-color: #f99417;
+  padding: 10px;
+  font-size: 1.15rem;
+  font-family: "urbanist-semibold";
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.botoes-projeto a:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.title-projeto {
+  font-family: "urbanist-semibold";
+  background: linear-gradient(90deg, #272150, #6656ce);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 20px 0;
+  color: #f8f8f8;
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .projetos h2 {
+    width: 95%;
+  }
+
+  .projeto {
+    grid-template-columns: 1fr;
+  }
+
+  .botoes-projeto a {
+    margin: 0 auto;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0;
+    height: 0;
+  }
+
+  .btn img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .projetos .center {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos h2 {
+    font-size: 2.7rem;
+  }
+
+  .banner-projeto {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .projetos h2 {
+    width: 95%;
+  }
+
+  .projeto {
+    padding: 15px;
+  }
+
+  .projetos .center {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 20px;
+  }
+
+  .btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .banner-projeto {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projetos h2 {
+    margin: 0 auto 100px auto;
+  }
+
+  .projetos {
+    padding: 0 0 60px 0;
+  }
+
+  .projetos .center {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .controle {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .projetos h2 {
+    font-size: 2.2rem;
+  }
+
+  .banner-projeto {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .botoes-projeto a {
+    margin: 5px 0;
+  }
+}

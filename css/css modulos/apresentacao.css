@@ -1,0 +1,96 @@
+.apresentacao{
+  position: relative;
+  width: 100%;
+  background-color: #363062;
+  padding-bottom: 275px;
+}
+
+.apresentacao .center{
+  padding-top:250px;
+  letter-spacing: 0.1rem;
+  color:#F5F5F5;
+  z-index: 777;
+}
+
+.apresentacao-infos{
+  text-align: center;
+}
+
+.apresentacao-infos h2{
+  font-size: 5.5rem;
+  margin:15px 0 35px 0;
+  font-family: "urbanist-regular";
+}
+
+.apresentacao-infos p{
+  position: relative;
+  font-size:1.4rem;
+  max-width: 40ch;
+  text-align: center;
+  margin:0 auto;
+  font-family: "urbanist-regular";
+}
+
+
+.button-projetos{
+  margin:0 auto;
+  text-align: center;
+  padding:20px;
+  width: 200px;
+  background-color: #F99417;
+  font-family: "urbanist-bold";
+  border-radius: 5px;
+  margin-top:60px;
+  font-size: 1.35rem;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.button-projetos:hover{
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.button-projetos a{
+  text-decoration: none;
+  color:#F5F5F5;
+}
+
+
+@media screen and (max-width:970px) {
+  .apresentacao-infos h2{
+    font-size: 4rem;
+  }
+  
+  .apresentacao-infos p{
+    position: relative;
+    font-size:1.3rem;
+  }
+  
+}
+
+@media screen and (max-width:725px) {
+  .apresentacao-infos h2{
+    font-size: 3rem;
+  }
+  
+  .apresentacao-infos p{
+    position: relative;
+    font-size:1.1rem;
+  }
+  
+}
+
+@media screen and (max-width:555px) {
+  .apresentacao-infos h2{
+    font-size: 2.3rem;
+  }
+  
+  .apresentacao-infos p{
+    position: relative;
+    font-size:1rem;
+  }
+  
+}
+
