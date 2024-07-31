@@ -51,9 +51,6 @@
   overflow: hidden;
 }
 
-.projetos .carousel {
-  width: 300%;
-}
 
 .title-projetos {
   width: 100%;
@@ -101,6 +98,11 @@
 }
 .projeto:nth-child(3) .banner-projeto {
   background-image: url("/images/P3.png");
+  background-size: cover;
+  background-position: center;
+}
+.projeto:nth-child(4) .banner-projeto {
+  background-image: url("/images/P4.png");
   background-size: cover;
   background-position: center;
 }

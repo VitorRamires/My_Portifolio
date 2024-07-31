@@ -1,7 +1,7 @@
-const painelSlide = document.querySelector(".carousel");
-const btnPrev = document.querySelector(".prev");
-const btnAfter = document.querySelector(".after");
-const slides = Array.from(document.querySelectorAll(".projeto"));
+const painelSlide = document.querySelector('.carousel');
+const btnPrev = document.querySelector('.prev');
+const btnAfter = document.querySelector('.after');
+const slides = Array.from(document.querySelectorAll('.projeto'));
 let slideCount = 0;
 
 function handleSlide() {
@@ -29,8 +29,9 @@ function handleSlide() {
     });
   }
 
-  btnAfter.addEventListener("click", nextItem);
-  btnPrev.addEventListener("click", prevItem);
+  painelSlide.style.width = slides.length * 100 + '%';
+  btnAfter.addEventListener('click', nextItem);
+  btnPrev.addEventListener('click', prevItem);
 }
 
 handleSlide();
