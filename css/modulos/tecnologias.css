@@ -1,0 +1,108 @@
+.tecnologias {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 40px;
+  border-radius: 5px;
+  z-index: 6;
+}
+
+.tech-title {
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "space-mono-regular";
+  color: #cacaca;
+  margin-bottom: 85px;
+}
+
+.tech-cards-box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.tech-card {
+  position: relative;
+  width: 13vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: normal;
+  background: linear-gradient(
+    180deg,
+    rgb(0, 255, 157),
+    rgb(0, 255, 157),
+    rgb(0, 255, 157),
+    #000000,
+    #000000
+  );
+  border-radius: 8px;
+  font-family: "inter";
+  padding: 3px;
+}
+
+.tech-card img {
+  width: 6vw;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--green-01);
+  background-color: #000000;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.img-wrapper p {
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 30px var(--green-01);
+}
+
+@media screen and (max-width: 1272px) {
+  .tech-card {
+    width: 25vw;
+  }
+
+  .img-wrapper p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .tech-card img {
+    width: 10vw;
+  }
+
+  .tech-card {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .tech-card {
+    width: 100%;
+  }
+
+  .tech-card img {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .tech-card img {
+    width: 25vw;
+  }
+}
+
+

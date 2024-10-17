@@ -1,6 +1,6 @@
-@import '/css/css\ modulos/global.css';
-@import '/css/css\ modulos/apresentacao.css';
-@import '/css/css\ modulos/sobre.css';
-@import '/css/css\ modulos/projetos.css';
-@import '/css/css\ modulos/adicionais.css';
-@import '/css/css\ modulos/animação.css';
+@import url(../css/modulos/global.css);
+@import url(../css/modulos/apresentacao.css);
+@import url(../css/modulos/tecnologias.css);
+@import url(../css/modulos/projetos.css);
+@import url(../css/modulos/sobre.css);
+@import url(../css/modulos/experiencias.css);

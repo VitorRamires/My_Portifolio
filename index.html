@@ -1,252 +1,447 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sou Vitor Ramires, e esse portifólio tem o intuíto de mostrar um pouco mais sobre mim, e sobre o que eu faço no desenvolvimento front-end" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Vitor Ramires</title>
-</head>
-
-<body>
-  <section class="menu-mob-body">
-    <div class="hamburguer">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="menu-mob">
-      <nav class="menu-mob-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#experiencias">Experiências</a>
-      </nav>
-      <div class="contato">
-        <div class="github">
-          <a href="https://github.com/VitorRamires"><img src="./images/github.svg" alt="github-icon" /></a>
-        </div>
-        <div class="linkedin">
-          <a href="https://www.linkedin.com/in/vitor-martins-ramires-1a6b051bb/"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="menu-body">
-    <div class="menu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sou Vitor Ramires, e esse portifólio tem o intuíto de mostrar um pouco mais sobre mim, e sobre o que eu faço no desenvolvimento front-end"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Vitor Ramires</title>
+  </head>
+  <body>
+    <header>
       <nav class="menu-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#experiencias">Experiências</a>
+        <ul>
+          <li><a href="#banner" class="active-link">ínicio</a></li>
+          <li><a href="#tech">Tecnologias</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#exp">Experiências</a></li>
+        </ul>
       </nav>
-      <div class="contato">
-        <div class="github">
-          <a href="https://github.com/VitorRamires"><img src="./images/github.svg" alt="github-icon" /></a>
-        </div>
-        <div class="linkedin">
-          <a href="https://www.linkedin.com/in/vitor-martins-ramires-1a6b051bb/"><img src="./images/linkedin.svg" alt="linkedin-icon" /></a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="apresentacao" id="apresentacao">
-    <div class="decoration decoration-left"></div>
-    <div class="decoration decoration-right"></div>
-    <div class="center">
-      <article class="apresentacao-infos anime">
-        <h2 class="info">Vitor Martins Ramires</h2>
-        <p class="info">
-          Sou desenvolvedor front-end e tenho noções em UI design
-        </p>
-      </article>
-      <div class="button-projetos">
-        <a href="#projetos">Ver projetos</a>
-      </div>
-    </div>
-    <div class="area">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </div>
-  </section>
-  <section class="sobre" id="sobre">
-    <div class="center">
-      <div class="sobre-informações">
-        <article class="historia anime">
-          <h2>Sobre mim</h2>
-          <p>
-            Sou desenvolvedor front-end que está sempre procurando evoluir e
-            aprender. Atualmente faço cursos e estudo por conta própria,
-            motivado pela minha paixão por front-end e pela minha curiosidade.
-          </p>
-          <p>
-            Estou sempre procurando fazer projetos pessoais, ou melhorar os
-            que eu já criei, buscando implementar funcionalidades novas as
-            quais eu vou aprendendo ao longo do tempo.
-          </p>
-        </article>
-      </div>
-      <div class="skills">
-        <div class="skill-title anime">
-          <h3>Skills</h3>
-        </div>
-        <div class="skill-tags">
+      <nav class="menu-links-mobile">
+        <div class="menu-mobile-body">
           <ul>
-            <li class="tags anime">Javascript</li>
-            <li class="tags anime">React.js</li>
-            <li class="tags anime">CSS3</li>
-            <li class="tags anime">HTML5</li>
-            <li class="tags anime">Figma</li>
-            <li class="tags anime">Photoshop</li>
-            <li class="tags anime">VS code</li>
-            <li class="tags anime">UI</li>
-            <li class="tags anime">Responsivo</li>
-            <li class="tags anime">GIT</li>
+            <li><a href="#banner">ínicio</a></li>
+            <li><a href="#tech">Tecnologias</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#exp">Experiências</a></li>
           </ul>
         </div>
+        <div class="btn-menu-mobile">
+          <div class="hamburguer menu-mobile-action">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <div class="close">
+            <img src="/assets/imgs/svg/close.svg" alt="" />
+          </div>
+        </div>
+        <ul class="menu-mobile">
+          <li><a href="">ínicio</a></li>
+          <li><a href="">Tecnologias</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Projetos</a></li>
+          <li><a href="">Experiências</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="banner" id="banner">
+      <div class="name-role">
+        <h2>Vitor Ramires</h2>
+        <h3>Front-end developer</h3>
       </div>
-    </div>
-  </section>
-  <section class="projetos" id="projetos">
-    <div class="title-projetos">
-      <h2>Meus projetos</h2>
-    </div>
-    <div class="controle">
-      <button class="prev btn">
-        <img src="./images/caret-left-fill.svg">
-        </p>
-        <button class="after btn">
-          <img src="./images/caret-left-fill.svg">
-          </p>
-    </div>
-    <div class="center">
-      <div class="carousel">
-        <div class="projeto-box">
-          <div class="projeto anime">
-            <div class="title-projeto">Bikestyle</div>
-            <div class="banner-projeto"></div>
-            <div class="informacao-projeto">
-              <div class="botoes-projeto">
-                <a href="https://bykestyle.netlify.app">Acessar</a>
-                <a href="https://github.com/VitorRamires/BikeStyle" class="href">Github</a>
-              </div>
+      <div class="banner-animation">
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 81"></span>
+        <span style="--i: 46"></span>
+        <span style="--i: 33"></span>
+        <span style="--i: 57"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 37"></span>
+        <span style="--i: 42"></span>
+        <span style="--i: 68"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 73"></span>
+        <span style="--i: 6"></span>
+        <div class="circle"></div>
+      </div>
+    </section>
+    <section class="tecnologias" id="tech">
+      <div class="centralize">
+        <div class="tech-cards-box">
+          <div class="tech-card">
+            <div class="img-wrapper">
+              <img src="/assets/imgs/svg/javascript.svg" alt="" />
+              <p>Javascript</p>
             </div>
           </div>
-          <div class="projeto anime">
-            <div class="title-projeto">Novak</div>
-            <div class="banner-projeto"></div>
-            <div class="informacao-projeto">
-              <div class="botoes-projeto">
-                <a href="https://novakengengenharia.netlify.app" class="href">Acessar</a>
-                <a href="https://github.com/VitorRamires/novak" class="href">Github</a>
-              </div>
+          <div class="tech-card">
+            <div class="img-wrapper">
+              <img src="/assets/imgs/svg/typescript.svg" alt="" />
+              <p>Typescript</p>
             </div>
           </div>
-          <div class="projeto anime">
-            <div class="title-projeto">Bitverter</div>
-            <div class="banner-projeto"></div>
-            <div class="informacao-projeto">
-              <div class="botoes-projeto">
-                <a href="https://btcconversor.netlify.app" class="href">Acessar</a>
-                <a href="https://github.com/VitorRamires/Bitverter" class="href">Github</a>
-              </div>
+          <div class="tech-card">
+            <div class="img-wrapper">
+              <img src="/assets/imgs/svg/react.svg" alt="" />
+              <p>React</p>
             </div>
           </div>
-          <div class="projeto anime">
-            <div class="title-projeto">Todo-list</div>
-            <div class="banner-projeto"></div>
-            <div class="informacao-projeto">
-              <div class="botoes-projeto">
-                <a href="https://vitortodolist.netlify.app/" class="href">Acessar</a>
-                <a href="https://github.com/VitorRamires/Todo-list" class="href">Github</a>
-              </div>
+          <div class="tech-card">
+            <div class="img-wrapper">
+              <img src="/assets/imgs/svg/css.svg" alt="" />
+              <p>CSS3</p>
+            </div>
+          </div>
+          <div class="tech-card">
+            <div class="img-wrapper">
+              <img src="/assets/imgs/svg/html.svg" alt="" />
+              <p>HTML5</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="experiencias" id="experiencias">
-    <aside class="experiencias-body">
-      <h2>Experiências</h2>
-      <div class="experiencia-box anime">
-        <h3>2021 / 2023 - Remoto</h3>
-        <div class="experiencia-info">
-          <div class="experiencia-titulos">
-            <h4>Digital Business</h4>
-            <h5>Desenvolvedor front-end</h5>
-          </div>
-          <div class="experiencia-descricao">
+    </section>
+    <section class="sobre" id="about">
+      <div class="centralize">
+        <div class="sobre-informações">
+          <article class="historia anime">
+            <h3>Sobre mim</h3>
             <p>
-              Desenvolvi banners de anuncios responsivos de grandes marcas
-              como Micosoft, Disney, Sony, CNN, Hyndai e entre outras,
-              utilizando Javascript, CSS, HTML e GSAP. Utilizei a plataforma
-              de design Photoshop para a adquirir e editar os assets usados
-              para a criação dos banners. Participei de uma equipe responsável
-              por edições de texto atraves da plataforma wordpress. A equipe
-              gerenciava as demandas e atribuições através da plataforma de
-              gerenciamento Teamwork, e a comunicação era feita atravès do
-              slack.
+              Sou desenvolvedor front-end que está sempre procurando evoluir e
+              aprender. Tenho contato com tecnologia desde pequeno, o que
+              facilitou minha entrada neste ramo. Tenho gosto de estar no meio
+              de TI atualmente, e isto me motiva a melhorar cada vez mais.
             </p>
-          </div>
-          <div class="experiencia-tags">
-            <ul>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>Slack</li>
-              <li>Photoshop</li>
-              <li>BrowserStack</li>
-              <li>GSAP</li>
-              <li>Teamwork</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experiencia-decoration"></div>
-      </div>
-      <div class="experiencia-box anime">
-        <h3>2019 / 2020 - Remoto</h3>
-        <div class="experiencia-info">
-          <div class="experiencia-titulos">
-            <h4>Evonnis</h4>
-            <h5>Trainee</h5>
-          </div>
-          <div class="experiencia-descricao">
             <p>
-              Realizei a intermediação em relação a comunicação do cliente com
-              a equipe de desenvovimento, e atuei na resolução de alguns bugs
-              referentes a banco de dados. Acompanhei o desenvolvimento de
-              landpages ao lado de desenvolvedores mais experientes, onde
-              iniciei meus estudos em relação a stack front-end
+              Procuro estar atuando projetos pessoais ou melhorar os que eu já
+              criei, além de sempre se atentar as tecnologias que o mercado e a
+              empresa que eu trabalho está demandando. Busco implementar
+              funcionalidades novas as quais eu vou aprendendo ao longo do tempo
+              em projetos que eu ja criei, e este resumo de coisas são o que me
+              proporciona maior leque de oportunidades para novos apredizados.
             </p>
-          </div>
-          <div class="experiencia-tags">
-            <ul>
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>Slack</li>
-              <li>Jira</li>
-            </ul>
+          </article>
+          <div class="skills">
+            <div class="skill-tags">
+              <ul>
+                <li class="tags anime">Javascript</li>
+                <li class="tags anime">Typescript</li>
+                <li class="tags anime">HTML</li>
+                <li class="tags anime">CSS</li>
+                <li class="tags anime">Git</li>
+                <li class="tags anime">Lógica</li>
+                <li class="tags anime">Pixel Perfect</li>
+                <li class="tags anime">UX / UI</li>
+                <li class="tags anime">Responsividade</li>
+                <li class="tags anime">SEO</li>
+                <li class="tags anime">Animações</li>
+                <li class="tags anime">Desenvolvimento web</li>
+                <li class="tags anime">API restful</li>
+                <li class="tags anime">Componentização</li>
+                <li class="tags anime">Bootstrap</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="experiencia-decoration"></div>
+        <div class="sobre-img">
+          <img src="/assets/imgs/svg/astro.svg" alt="" />
+          <div class="anim-sobre">
+            <div class="orbit">
+              <div class="main-planet">
+                <div class="secundary-planet"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </aside>
-    <div class="slider-thumb"></div>
-  </section>
+    </section>
+    <section class="projetos" id="projects">
+      <div class="centralize">
+        <h2>Projetos</h2>
+        <div class="projects-box">
+          <div class="grid-column">
+            <a href="https://bitverter.netlify.app/">
+              <div class="project-card">
+                <img src="/assets/bitverter.png" alt="" />
+                <p class="title-project">Bitverter</p>
+                <div class="project-tags">
+                  <p>Javascript</p>
+                  <p>CSS</p>
+                  <p>HTML</p>
+                  <p>API</p>
+                </div>
+              </div>
+            </a>
+            <div class="loading">
+              <div class="loading-bar">
+                <p>Carregando...</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid-column">
+            <a href="https://bykestyle.netlify.app/">
+              <div class="project-card">
+                <img src="/assets/imgs/bikestyle.jpg" alt="" />
+                <p class="title-project">Bikestyle</p>
+                <div class="project-tags">
+                  <p>Javascript</p>
+                  <p>CSS</p>
+                  <p>HTML</p>
+                </div>
+              </div>
+            </a>
+            <div class="loading">
+              <div class="loading-bar">
+                <p>Carregando...</p>
+              </div>
+            </div>
+          </div>
 
-  <script src="./js/animation.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/carousel.js"></script>
-</body>
+          <div class="grid-column">
+            <a href="https://lucasramiresprojetos.netlify.app/">
+              <div class="project-card">
+                <img src="/assets/imgs/portifolio.jpg" alt="" />
+                <p class="title-project">Portifólio</p>
+                <div class="project-tags">
+                  <p>Javascript</p>
+                  <p>CSS</p>
+                  <p>HTML</p>
+                </div>
+              </div>
+            </a>
+            
+            <div class="project-card">
+              <a href="https://react-pomodor.netlify.app/">
+                <img src="/assets/imgs/pomodoro.png" alt="" />
+                <p class="title-project">Pomodoro</p>
+                <div class="project-tags">
+                  <p>Typescript</p>
+                  <p>React</p>
+                  <p>Styled Components</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experiencias" id="exp">
+      <div class="centralize">
+        <h2>Expêriencias</h2>
+        <div class="experiencias-box">
+          <div class="exp-card-selection">
+            <div class="exp-card">
+              <div class="exp-card-info">
+                <p>Tintitech</p>
+                <p>Dev frontend</p>
+                <p>2024</p>
+              </div>
+              <div class="exp-descricao show-exp">
+                <h3>Resumo</h3>
+                <p>
+                  Autei no desennvolvimento de uma plataforma de gestão e
+                  controle no setor judiciario. Utilizei as tecnologias
+                  <span class="destaque">CSS</span> para estilização e
+                  responsividade, <span class="destaque">HTML</span> para
+                  estruturação e <span class="destaque">Javascript</span> para a
+                  implementação das funcnionalidades. Além disso,a atuei na
+                  integração com back-end utilizando
+                  <span class="destaque">Django</span> e usei o
+                  <span class="destaque">Docker</span> para configuração do
+                  ambiente de desevolvimeto.
+                </p>
+                <p>
+                  A comunicação era feita principalmente através do Discord
+                  entre o time. Toda a aplicação foi baseada no Design feito na
+                  plataforma <span class="destaque">Figma</span>.
+                </p>
+                <div class="exp-tags">
+                  <p class="css">CSS</p>
+                  <p class="html">HTML</p>
+                  <p class="JS">Javascript</p>
+                  <p class="design">Figma</p>
+                  <p class="django">Django</p>
+                  <p class="docker">Docker</p>
+                </div>
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-info">
+                <p>Digital Business</p>
+                <p>Dev frontend</p>
+                <p>2022</p>
+              </div>
+              <div class="exp-descricao">
+                <h3>Resumo</h3>
+                <p>
+                  Desenvolvi banners de anuncios responsivos de grandes marcas
+                  como Micosoft, Disney, Sony, CNN, Hyundai, Americanas, Xbox,
+                  Playstation, Disney e entre outras marcas, utilizando
+                  <span class="destaque">Javascript</span>,
+                  <span class="destaque">CSS</span>,
+                  <span class="destaque">HTML</span> e
+                  <span class="destaque">GSAP</span>. Tambem utilizei a
+                  plataforma de design
+                  <span class="destaque">Photoshop</span> para a adquirir e
+                  editar os assets usados para a criação dos banners.
+                </p>
+                <p>
+                  Participei de uma equipe responsável por edições de texto
+                  atraves da plataforma Wordpress. A equipe gerenciava as
+                  demandas e atribuições através da plataforma de gerenciamento
+                  <span class="destaque">Teamwork</span>, e a nossa comunicação
+                  era feita através do <span class="destaque">Slack</span>.
+                </p>
+                <div class="exp-tags">
+                  <p class="css">CSS</p>
+                  <p class="html">HTML</p>
+                  <p class="JS">Javascript</p>
+                  <p class="design">Photoshop</p>
+                  <p class="gsap">GSAP</p>
+                </div>
+              </div>
+            </div>
+            <div class="exp-card">
+              <div class="exp-card-info">
+                <p>Trainee</p>
+                <p>2020</p>
+                <p>Evonnis</p>
+              </div>
+              <div class="exp-descricao">
+                <h3>Resumo</h3>
+                <p>
+                  Atuei na resolução de bugs simples no banco de dados. Além
+                  disso fiz a intermediação entre o time de desenvolvimento e o
+                  cliente, bem como no suporte técnico. Utilizando
+                  <span class="destaque">HTML</span> e
+                  <span class="destaque">CSS</span>, ajudei o time de
+                  desenvolvimento na estruturação e estilização de websites, bem
+                  como na responsividade do mesmo.
+                </p>
+                <p>
+                  A comunicação era feita através do
+                  <span class="destaque">Slack</span>. Utilizei o
+                  <span class="destaque">Github</span>
+                  com o time para organização e versionamento do código, e o
+                  Jira para gerenciameto das tarefas.
+                </p>
+                <div class="exp-tags">
+                  <p class="css">CSS</p>
+                  <p class="html">HTML</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 
+  <script src="/js/animation.js"></script>
 </html>

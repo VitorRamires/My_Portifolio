@@ -1,0 +1,212 @@
+.sobre {
+  position: relative;
+  width: 100%;
+  margin: 50px auto 0 auto;
+  padding: 50px 0 100px 0;
+}
+
+.sobre .centralize {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.sobre-img {
+  position: relative;
+  width: 100%;
+}
+
+.sobre img {
+  position: relative;
+  width: 40vw;
+  object-fit: cover;
+  z-index: 8;
+}
+
+.anim-sobre {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+}
+
+.orbit {
+  animation: orbit 10s linear infinite;
+}
+
+.main-planet {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: var(--green-01);
+  border-radius: 50%;
+  box-shadow: 1px 1px 1200px 100px var(--green-02);
+  animation: ligthPlanet 5s linear infinite;
+}
+
+.secundary-planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: translateY(-50px);
+}
+
+.historia h3 {
+  color: #ffffff;
+  font-family: "space-mono-regular";
+  font-size: 5rem;
+  text-align: start;
+}
+
+.historia p {
+  color: #888888;
+  font-family: "inter";
+  font-size: 1.15rem;
+  line-height: 2;
+  text-align: start;
+  margin-top: 35px;
+}
+
+.skills {
+  position: relative;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+.skill-tags {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.skill-tags ul {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.tags {
+  width: max-content;
+  background-color: transparent;
+  border: 1px solid var(--green-01);
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px 0 var(--green-01);
+  color: var(--green-01);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "space-mono-regular";
+}
+
+@keyframes ligthPlanet {
+  0% {
+    box-shadow: 1px 1px 1200px 100px var(--green-02);
+  }
+
+  50% {
+    box-shadow: 1px 1px 1200px 150px var(--green-03);
+  }
+
+  100% {
+    box-shadow: 1px 1px 1200px 100px var(--green-02);
+  }
+}
+
+@keyframes orbit {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .sobre img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1129px) {
+  .anim-sobre {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+  }
+
+  .sobre .centralize {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-img {
+    width: 500px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .anim-sobre {
+    position: absolute;
+    bottom: 0;
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sobre-img {
+    width: 100%;
+  }
+
+  .main-planet {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: var(--green-01);
+    border-radius: 50%;
+    box-shadow: 1px 1px 100px 30px var(--green-02);
+    animation: ligthPlanet 5s linear infinite;
+  }
+
+  .historia h3 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  @keyframes ligthPlanet {
+    0% {
+      box-shadow: 1px 1px 200px 50px var(--green-02);
+    }
+
+    50% {
+      box-shadow: 1px 1px 100px 20px var(--green-03);
+    }
+
+    100% {
+      box-shadow: 1px 1px 200px 50px var(--green-02);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .tags {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .secundary-planet {
+    width: 30px;
+    height: 30px;
+    transform: translateY(-25px);
+  }
+}

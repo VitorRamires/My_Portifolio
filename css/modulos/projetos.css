@@ -1,0 +1,207 @@
+.projetos {
+  position: relative;
+  width: 100%;
+  padding: 150px 44px 0 44px;
+  background-image: url(/assets/projects-bg.png);
+  background-size: cover;
+  transition: 2s;
+  animation: projectBg 150s ease infinite forwards;
+}
+
+.projetos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 25px 55px rgb(0, 0, 0);
+}
+
+.projetos::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 -40px 45px 55px rgb(0, 0, 0);
+}
+
+.projetos h2 {
+  text-align: center;
+  margin-bottom: 100px;
+  color: #fff;
+  font-family: "space-mono-regular";
+  font-size: 3rem;
+}
+
+.projects-box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: start center;
+  gap: 50px;
+  padding: 0 15px;
+}
+
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  position: relative;
+  max-width: 100%;
+  border-radius: 15px;
+  height: min-content;
+  margin-bottom: 70px;
+}
+
+.loading {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(
+    360deg,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0),
+    rgb(29, 29, 29)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: "space-mono-regular";
+  color: var(--green-01);
+  animation: screenBg 5s ease-in-out infinite forwards;
+  border-radius: 5px;
+}
+
+.loading-bar {
+  position: relative;
+  width: 70%;
+  height: 50px;
+  background-color: rgb(49, 49, 49);
+}
+
+.loading-bar::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: var(--green-03);
+  animation: loading 25s ease-in-out infinite forwards;
+  text-align: center;
+}
+
+.loading-bar p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+}
+
+.project-tags {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-tags p {
+  font-family: "inter" !important;
+  border: 1px solid var(--green-01);
+  color: var(--green-01) !important;
+  box-shadow: 1px 1px 10px 0 var(--green-01);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 0.75rem;
+}
+
+.project-card img {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px -5px rgb(24, 24, 24);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.project-card img:hover {
+  transform: translateY(-13px);
+}
+
+.project-card .title-project {
+  color: #fff;
+  text-align: center;
+  font-family: "space-mono-regular";
+  margin: 25px 0 15px 0;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes projectBg {
+  0%{
+    background-position: 0;
+  }
+
+  50%{
+    background-position: 100%;
+  }
+
+  100%{
+    background-position: 0;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  .loading-bar p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .projects-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projetos {
+    background-image: url(/assets/projects-bg-mobile.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projetos{
+    padding: 150px 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .projetos h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 329px) {
+  .loading-bar p {
+      font-size: 0.7rem;
+  }
+}
