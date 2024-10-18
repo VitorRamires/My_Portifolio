@@ -190,6 +190,10 @@
   .exp-card-selection {
     display: block;
   }
+
+  .exp-card {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 528px) {
@@ -208,12 +212,12 @@
 }
 
 @media screen and (max-width: 350px) {
-  .exp-tags{
+  .exp-tags {
     display: block;
     text-align: center;
   }
 
-  .exp-tags p{
-    margin-top:10px;
+  .exp-tags p {
+    margin-top: 10px;
   }
 }
