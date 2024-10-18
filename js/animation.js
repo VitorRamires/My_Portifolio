@@ -13,6 +13,8 @@ const closeBtn = document.querySelector(".close");
 const btnMenuMobile = document.querySelector(".btn-menu-mobile");
 const menuMobile = document.querySelector(".menu-links-mobile");
 
+const animElements = document.querySelectorAll(".anim");
+
 stars.forEach((star) => {
   let positionX = Math.floor(Math.random() * 100);
   let positionY = Math.floor(Math.random() * 100);
@@ -82,3 +84,20 @@ btnMenuMobile.addEventListener("click", () => {
     closeBtn.classList.add("menu-mobile-action");
   }
 });
+
+function handleEntraceAnimations() {
+  animElements.forEach((element) => {
+    const elementDistanceTop = element.getBoundingClientRect().top;
+    let windowHeight = window.innerHeight * 0.9;
+    if (elementDistanceTop < windowHeight) {
+      element.classList.add("active-animation");
+      return;
+    }
+  });
+}
+
+setTimeout(() => {
+  handleEntraceAnimations();
+}, 250);
+
+window.addEventListener("scroll", handleEntraceAnimations);

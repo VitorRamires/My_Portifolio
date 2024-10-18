@@ -1,0 +1,64 @@
+.anim {
+  opacity: 0;
+  transition: 1s;
+}
+
+.active-animation {
+  opacity: 1;
+}
+
+/* ========= banner ========= */
+
+.banner-anim {
+  transform: translateY(100px);
+}
+
+.banner-anim.active-animation {
+  transform: translateY(0);
+}
+
+.banner-anim-delay.anim {
+  transition-delay: 0.5s;
+}
+
+/* ========= tecnologias ========= */
+
+.tech-anim {
+  transform: translateY(100px);
+}
+
+.tech-anim.active-animation {
+  transform: translateY(0);
+}
+
+.tech-anim-delay:nth-child(2).anim {
+  transition-delay: 0.1s;
+}
+
+.tech-anim-delay:nth-child(3).anim {
+  transition-delay: 0.2s;
+}
+
+.tech-anim-delay:nth-child(4).anim {
+  transition-delay: 0.3s;
+}
+
+.tech-anim-delay:nth-child(5).anim {
+  transition-delay: 0.4s;
+}
+
+/* ========= tags ========= */
+
+.tags.active-animation {
+  transition-delay: calc(1s * var(--ta));
+}
+
+/* ======== EXP ============ */
+
+.exp-anim {
+  transform: translateY(-50px);
+}
+
+.exp-anim.active-animation {
+  transform: translateY(0);
+}

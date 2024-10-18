@@ -11,15 +11,18 @@
     <title>Vitor Ramires</title>
   </head>
   <body>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/" target="_blank">
-        <img src="/assets/imgs/svg/linkedin.svg" alt="" />
-      </a>
-      <a href="https://github.com/" target="_blank">
-        <img src="/assets/imgs/svg/github.svg" alt="" />
-      </a>
-    </div>
     <header>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/"
+          target="_blank"
+        >
+          <img src="/assets/imgs/svg/linkedin.svg" alt="" />
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <img src="/assets/imgs/svg/github.svg" alt="" />
+        </a>
+      </div>
       <nav class="menu-links">
         <ul>
           <li><a href="#banner" class="active-link">ínicio</a></li>
@@ -38,6 +41,17 @@
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#exp">Experiências</a></li>
           </ul>
+          <div class="social-links-mobile">
+            <a
+              href="https://www.linkedin.com/in/vitor-ramires-1a6b051bb/"
+              target="_blank"
+            >
+              <img src="/assets/imgs/svg/linkedin.svg" alt="" />
+            </a>
+            <a href="https://github.com/" target="_blank">
+              <img src="/assets/imgs/svg/github.svg" alt="" />
+            </a>
+          </div>
         </div>
         <div class="btn-menu-mobile">
           <div class="hamburguer menu-mobile-action">
@@ -49,19 +63,12 @@
             <img src="/assets/imgs/svg/close.svg" alt="" />
           </div>
         </div>
-        <ul class="menu-mobile">
-          <li><a href="">ínicio</a></li>
-          <li><a href="">Tecnologias</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Experiências</a></li>
-        </ul>
       </nav>
     </header>
     <section class="banner" id="banner">
       <div class="name-role">
-        <h2>Vitor Ramires</h2>
-        <h3>Front-end developer</h3>
+        <h2 class="banner-anim anim">Vitor Ramires</h2>
+        <h3 class="banner-anim anim banner-anim-delay">Front-end developer</h3>
       </div>
       <div class="banner-animation">
         <span style="--i: 20"></span>
@@ -182,31 +189,31 @@
     <section class="tecnologias" id="tech">
       <div class="centralize">
         <div class="tech-cards-box">
-          <div class="tech-card">
+          <div class="tech-card anim tech-anim tech-anim-delay">
             <div class="img-wrapper">
               <img src="/assets/imgs/svg/javascript.svg" alt="" />
               <p>Javascript</p>
             </div>
           </div>
-          <div class="tech-card">
+          <div class="tech-card anim tech-anim tech-anim-delay">
             <div class="img-wrapper">
               <img src="/assets/imgs/svg/typescript.svg" alt="" />
               <p>Typescript</p>
             </div>
           </div>
-          <div class="tech-card">
+          <div class="tech-card anim tech-anim tech-anim-delay">
             <div class="img-wrapper">
               <img src="/assets/imgs/svg/react.svg" alt="" />
               <p>React</p>
             </div>
           </div>
-          <div class="tech-card">
+          <div class="tech-card anim tech-anim tech-anim-delay">
             <div class="img-wrapper">
               <img src="/assets/imgs/svg/css.svg" alt="" />
               <p>CSS3</p>
             </div>
           </div>
-          <div class="tech-card">
+          <div class="tech-card anim tech-anim tech-anim-delay">
             <div class="img-wrapper">
               <img src="/assets/imgs/svg/html.svg" alt="" />
               <p>HTML5</p>
@@ -218,7 +225,7 @@
     <section class="sobre" id="about">
       <div class="centralize">
         <div class="sobre-informações">
-          <article class="historia anime">
+          <article class="historia">
             <h3>Sobre mim</h3>
             <p>
               Sou desenvolvedor front-end que está sempre procurando evoluir e
@@ -238,21 +245,21 @@
           <div class="skills">
             <div class="skill-tags">
               <ul>
-                <li class="tags anime">Javascript</li>
-                <li class="tags anime">Typescript</li>
-                <li class="tags anime">HTML</li>
-                <li class="tags anime">CSS</li>
-                <li class="tags anime">Git</li>
-                <li class="tags anime">Lógica</li>
-                <li class="tags anime">Pixel Perfect</li>
-                <li class="tags anime">UX / UI</li>
-                <li class="tags anime">Responsividade</li>
-                <li class="tags anime">SEO</li>
-                <li class="tags anime">Animações</li>
-                <li class="tags anime">Desenvolvimento web</li>
-                <li class="tags anime">API restful</li>
-                <li class="tags anime">Componentização</li>
-                <li class="tags anime">Bootstrap</li>
+                <li class="tags anim" style="--ta: 0">Javascript</li>
+                <li class="tags anim" style="--ta: 0.8">Typescript</li>
+                <li class="tags anim" style="--ta: 0.3">HTML</li>
+                <li class="tags anim" style="--ta: 0.84">CSS</li>
+                <li class="tags anim" style="--ta: 0.54">Git</li>
+                <li class="tags anim" style="--ta: 0.5">Lógica</li>
+                <li class="tags anim" style="--ta: 0.15">Pixel Perfect</li>
+                <li class="tags anim" style="--ta: 0.85">UX / UI</li>
+                <li class="tags anim" style="--ta: 1">Responsividade</li>
+                <li class="tags anim" style="--ta: 0.97">SEO</li>
+                <li class="tags anim" style="--ta: 0.77">Animações</li>
+                <li class="tags anim" style="--ta: 0.2">Desenvolvimento web</li>
+                <li class="tags anim" style="--ta: 0.62">API restful</li>
+                <li class="tags anim" style="--ta: 0.9">Componentização</li>
+                <li class="tags anim" style="--ta: 1">Bootstrap</li>
               </ul>
             </div>
           </div>
@@ -345,7 +352,7 @@
         <h2>Expêriencias</h2>
         <div class="experiencias-box">
           <div class="exp-card-selection">
-            <div class="exp-card">
+            <div class="exp-card anim exp-anim">
               <div class="exp-card-info">
                 <p>Tintitech</p>
                 <p>Dev frontend</p>
@@ -380,7 +387,7 @@
                 </div>
               </div>
             </div>
-            <div class="exp-card">
+            <div class="exp-card anim exp-anim">
               <div class="exp-card-info">
                 <p>Digital Business</p>
                 <p>Dev frontend</p>
@@ -416,7 +423,7 @@
                 </div>
               </div>
             </div>
-            <div class="exp-card">
+            <div class="exp-card anim exp-anim">
               <div class="exp-card-info">
                 <p>Trainee</p>
                 <p>2020</p>
@@ -443,6 +450,40 @@
                 <div class="exp-tags">
                   <p class="css">CSS</p>
                   <p class="html">HTML</p>
+                </div>
+              </div>
+            </div>
+            <div class="exp-card anim exp-anim">
+              <div class="exp-card-info">
+                <p>Projetos pessoais</p>
+              </div>
+              <div class="exp-descricao">
+                <h3>Resumo</h3>
+                <p>
+                  Constantemente crio ou mellhoro projetos pessoais, os quais
+                  uso principalmente para aprendizado de algum assunto, ou
+                  curiosidade sobre alguma funcionalidade ou tecnolgia. Procuro
+                  criar eu mesmo o design do projeto. Mas existem casos em que
+                  treino com projetos encontrados em cursos.
+                </p>
+                <p>
+                  As principais tecnologias que estou atuando hoje,
+                  <span class="destaque">HTML</span>,
+                  <span class="destaque">CSS</span>,
+                  <span class="destaque">Javascript</span>,
+                  <span class="destaque">React</span> e agora estou estudando
+                  <span class="destaque">Typescript</span> para Em um futuro não
+                  muito distante, quero me aprofundar em outras ferramantas como
+                  SCSS, Tailwind, estudar mais sobre Boostrap. Após isso, tambem
+                  tenho curiosidade sobre React Native.
+                </p>
+                <div class="exp-tags">
+                  <p class="css">CSS</p>
+                  <p class="html">HTML</p>
+                  <p class="JS">Javascript</p>
+                  <p class="typescript">Typescript</p>
+                  <p class="react">React</p>
+                  <p class="design">Figma</p>
                 </div>
               </div>
             </div>
