@@ -10,7 +10,7 @@ header {
   padding: 20px 40px;
   gap: 20px;
   font-family: "space-mono-regular";
-  z-index: 12;
+  z-index: 17;
 }
 
 
@@ -211,6 +211,20 @@ header a:hover{
 .active-link {
   color: var(--green-01);
   transition: 0.2s;
+}
+
+
+.social-links{
+  position: fixed;
+  top:1.5%;
+  right:1%;
+  display: flex;
+  gap: 10px;
+  z-index: 18;
+  background-color: #1a1a1a;
+  padding:10px;
+  border-radius: 8px;
+  border: 1px solid var(--green-01);
 }
 
 @keyframes animCircle {
