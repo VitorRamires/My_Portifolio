@@ -5,13 +5,14 @@ const projectScreen = document.querySelector(".tela-projeto");
 const expCard = document.querySelectorAll(".exp-card");
 const expDescription = document.querySelectorAll(".exp-descricao");
 
-const menuLinks = document.querySelectorAll("header a");
+const menuLinks = document.querySelectorAll(".main-links a");
 const allSections = document.querySelectorAll("section");
 
 const hamburguerBtn = document.querySelector(".hamburguer");
 const closeBtn = document.querySelector(".close");
 const btnMenuMobile = document.querySelector(".btn-menu-mobile");
 const menuMobile = document.querySelector(".menu-links-mobile");
+const mobile_menu_body = document.querySelector('.menu-mobile-body')
 
 const animElements = document.querySelectorAll(".anim");
 
