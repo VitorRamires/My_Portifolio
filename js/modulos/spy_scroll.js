@@ -1,20 +1,7 @@
 const stars = document.querySelectorAll(".banner-animation span");
-const delayElements = document.querySelectorAll(".delay");
-const projectScreen = document.querySelector(".tela-projeto");
-
-const expCard = document.querySelectorAll(".exp-card");
-const expDescription = document.querySelectorAll(".exp-descricao");
 
 const menuLinks = document.querySelectorAll(".main-links a");
 const allSections = document.querySelectorAll("section");
-
-const hamburguerBtn = document.querySelector(".hamburguer");
-const closeBtn = document.querySelector(".close");
-const btnMenuMobile = document.querySelector(".btn-menu-mobile");
-const menuMobile = document.querySelector(".menu-links-mobile");
-const mobile_menu_body = document.querySelector('.menu-mobile-body')
-
-const animElements = document.querySelectorAll(".anim");
 
 stars.forEach((star) => {
   let positionX = Math.floor(Math.random() * 100);
@@ -37,7 +24,7 @@ menuLinks.forEach((link) => {
     }
     menuMobile.classList.remove("active-menu");
     closeBtn.classList.remove("menu-mobile-action");
-    hamburguerBtn.classList.add("menu-mobile-action");
+    hamburgerBtn.classList.add("menu-mobile-action");
     window.scroll({
       top: getDistance,
       bottom: 0,
@@ -73,32 +60,3 @@ const observer = new IntersectionObserver(classLinkAdd, options);
 allSections.forEach((section) => {
   observer.observe(section);
 });
-
-btnMenuMobile.addEventListener("click", () => {
-  if (menuMobile.classList.contains("active-menu")) {
-    menuMobile.classList.remove("active-menu");
-    hamburguerBtn.classList.add("menu-mobile-action");
-    closeBtn.classList.remove("menu-mobile-action");
-  } else {
-    menuMobile.classList.add("active-menu");
-    hamburguerBtn.classList.remove("menu-mobile-action");
-    closeBtn.classList.add("menu-mobile-action");
-  }
-});
-
-function handleEntraceAnimations() {
-  animElements.forEach((element) => {
-    const elementDistanceTop = element.getBoundingClientRect().top;
-    let windowHeight = window.innerHeight * 0.9;
-    if (elementDistanceTop < windowHeight) {
-      element.classList.add("active-animation");
-      return;
-    }
-  });
-}
-
-setTimeout(() => {
-  handleEntraceAnimations();
-}, 250);
-
-window.addEventListener("scroll", handleEntraceAnimations);
