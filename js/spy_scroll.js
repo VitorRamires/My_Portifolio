@@ -1,5 +1,4 @@
 const stars = document.querySelectorAll(".banner-animation span");
-
 const menuLinks = document.querySelectorAll(".main-links a");
 const allSections = document.querySelectorAll("section");
 

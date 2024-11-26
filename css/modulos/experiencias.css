@@ -175,15 +175,6 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .exp-card-selection {
-    display: block;
-  }
-
-  .exp-card {
-    margin-top: 20px;
-  }
-}
 
 @media screen and (max-width: 528px) {
   .tech-card {
