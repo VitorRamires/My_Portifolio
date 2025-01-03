@@ -1,7 +1,7 @@
 .sobre {
   position: relative;
   width: 100%;
-  margin: 50px auto 0 auto;
+  margin: 150px auto 0 auto;
   padding: 50px 0 100px 0;
 }
 
@@ -11,6 +11,7 @@
   place-items: center;
   gap: 20px;
   padding-top: 100px;
+  border-top:1px solid rgb(39, 39, 39);
 }
 
 .sobre-img {
